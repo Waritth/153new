@@ -578,8 +578,9 @@
   .modal-content-main .modal-tag-pill{background:var(--red-50);color:var(--red);border-color:var(--red-100);}
   .modal-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
   @media(max-width:700px){.modal-grid-2{grid-template-columns:1fr;}}
-  .modal-budget-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:8px;}
-  @media(max-width:700px){.modal-budget-grid{grid-template-columns:repeat(2,1fr);}}
+  .modal-budget-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:8px;}
+  @media(max-width:900px){.modal-budget-grid{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:600px){.modal-budget-grid{grid-template-columns:repeat(2,1fr);}}
   .budget-cell-card{
     background:var(--gray-50);border:1.5px solid var(--border);border-radius:10px;
     padding:14px 12px;text-align:center;
@@ -594,6 +595,8 @@
   .budget-cell-card.mkt{border-top:3px solid #1e40af;}
   .budget-cell-card.plat{border-top:3px solid #60a5fa;}
   .budget-cell-card.sales{border-top:3px solid #ef4444;}
+  .budget-cell-card.buffer{border-top:3px solid #64748b;background:#f8fafc;}
+  .budget-cell-card.buffer .bc-val{color:#334155;}
   .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;}
   .kpi-card-mini{
     background:linear-gradient(135deg,var(--blue-50) 0%,var(--white) 100%);
@@ -615,7 +618,7 @@
   <div class="hero">
     <div class="eyebrow">VF Brand Development Portfolio</div>
     <h1>โครงการพัฒนาแบรนด์ <span class="accent">VF</span> กองทุนหมู่บ้าน ปีที่ 2</h1>
-    <p class="subtitle">Dashboard ภาพรวม — 10 โครงการภายใต้แบรนด์แม่ VF เน้นขยายการขายในประเทศ ส่งออก และตอบโจทย์รัฐบาล 2 เรื่อง งบรวม 400 ลบ. ดำเนินงานภายใน 10 เดือน สินค้ารวม 113 SKU</p>
+    <p class="subtitle">Dashboard ภาพรวม — 11 โครงการภายใต้แบรนด์แม่ VF เน้นขยายการขายในประเทศ ส่งออก ตอบโจทย์รัฐบาล 2 เรื่อง และบ่มเพาะเลือดใหม่ให้กองทุน งบรวม 579 ลบ. (งบทำงาน 482 ลบ. + เงินสำรอง 97 ลบ.) ดำเนินงานภายใน 10 เดือน สินค้ารวม 113 SKU + ผู้ประกอบการใหม่ 1,000+ คน</p>
     <div class="parent-tag">★ ต่อเนื่องจากโครงการ 153 ปีที่ 1 ★</div>
   </div>
 
@@ -623,17 +626,23 @@
   <div class="stats-row">
     <div class="stat-card">
       <div class="stat-label">งบประมาณรวม</div>
-      <div class="stat-value">400</div>
+      <div class="stat-value">579</div>
       <div class="stat-unit">ล้านบาท</div>
-      <div class="stat-sub">Year 2 — 10 โครงการ</div>
+      <div class="stat-sub">Year 2 — 11 โครงการ (รวม Buffer ~20%)</div>
     </div>
     <div class="stat-card red">
       <div class="stat-label">สินค้าเข้าแบรนด์ VF</div>
       <div class="stat-value">113</div>
       <div class="stat-unit">SKU</div>
-      <div class="stat-sub">80 จากหลัก (20 รอด+60 ใหม่) + 25 จากเสริม</div>
+      <div class="stat-sub">80 จากหลัก (20 รอด+60 ใหม่) + 33 จากเสริม</div>
     </div>
     <div class="stat-card blue-dark">
+      <div class="stat-label">ผู้ประกอบการรุ่นใหม่</div>
+      <div class="stat-value">1,000<span style="font-size:22px;color:var(--gray-400);">+</span></div>
+      <div class="stat-unit">คน ผ่าน VF Academy</div>
+      <div class="stat-sub">เลือดใหม่ให้กองทุน + 20 Seed Ideas</div>
+    </div>
+    <div class="stat-card">
       <div class="stat-label">สัดส่วนช่องทางขาย</div>
       <div class="stat-value">60<span style="font-size:22px;color:var(--gray-400);">/</span>20<span style="font-size:22px;color:var(--gray-400);">/</span>20</div>
       <div class="stat-unit">Domestic / Export / Direct</div>
@@ -719,7 +728,7 @@
           <span class="partner-chip">POS กลาง</span>
         </div>
         <div class="channel-handler">
-          <strong>รับผิดชอบ:</strong> โครงการ #9 VF Smart Store × ธงฟ้า (25 ลบ., 9 เดือน)
+          <strong>รับผิดชอบ:</strong> โครงการ #9 VF Smart Store × ธงฟ้า (48 ลบ., 9 เดือน)
         </div>
       </div>
 
@@ -779,7 +788,7 @@
       </div>
       <div class="chart-card">
         <div class="chart-title">งบประมาณตามหมวดการใช้จ่าย</div>
-        <div class="chart-sub">งบรวม 400 ลบ. แบ่งเป็น 4 หมวดหลัก</div>
+        <div class="chart-sub">งบรวม 579 ลบ. แบ่งเป็น 5 หมวด (รวม Buffer 20%)</div>
         <div class="chart-container">
           <canvas id="pieCategory"></canvas>
         </div>
@@ -787,7 +796,7 @@
       </div>
       <div class="chart-card">
         <div class="chart-title">งบประมาณตามโครงการ</div>
-        <div class="chart-sub">10 โครงการในพอร์ตโฟลิโอ</div>
+        <div class="chart-sub">11 โครงการในพอร์ตโฟลิโอ</div>
         <div class="chart-container">
           <canvas id="pieProject"></canvas>
         </div>
@@ -877,9 +886,9 @@
         <div class="gov-title">VF Smart Store × ธงฟ้า</div>
         <p class="gov-desc">ร้านค้ากองทุนรับสินค้าธงฟ้าจากกระทรวงพาณิชย์มาจำหน่ายในชุมชน พร้อมขายสินค้า VF Brand ที่กองทุนผลิตเอง — ปิดวงจรจากต้นน้ำถึงปลายน้ำ</p>
         <div class="gov-meta">
-          <span><strong>งบ:</strong>25 ลบ.</span>
+          <span><strong>งบ:</strong>48 ลบ.</span>
           <span><strong>ระยะเวลา:</strong>9 เดือน</span>
-          <span><strong>สาขานำร่อง:</strong>500-1,000 ร้าน</span>
+          <span><strong>สาขานำร่อง:</strong>200 ร้าน (เต็มรูปแบบ)</span>
         </div>
       </div>
       <div class="gov-card">
@@ -887,9 +896,9 @@
         <div class="gov-title">VF Green Fertilizer — ปุ๋ยชุมชน</div>
         <p class="gov-desc">ผลิตปุ๋ยอินทรีย์จากวัตถุดิบในพื้นที่ (มูลสัตว์/เศษชีวมวล/ตะกอนชา-กาแฟจากโครงการ #4) จำหน่ายผ่านร้านกองทุน ใช้ในโครงการเกษตร VF เอง (ผลไม้ #3 / ชา #4 / ข้าว #7)</p>
         <div class="gov-meta">
-          <span><strong>งบ:</strong>17 ลบ.</span>
+          <span><strong>งบ:</strong>36 ลบ.</span>
           <span><strong>ระยะเวลา:</strong>8 เดือน</span>
-          <span><strong>โรงงานนำร่อง:</strong>10-15 แห่ง</span>
+          <span><strong>ศูนย์ผลิตนำร่อง:</strong>30 แห่ง</span>
         </div>
       </div>
     </div>
@@ -898,7 +907,7 @@
   <!-- PROJECTS TABLE -->
   <div class="section">
     <div class="section-title">
-      รายการโครงการในพอร์ตโฟลิโอ <span class="kicker">10 PROJECTS</span>
+      รายการโครงการในพอร์ตโฟลิโอ <span class="kicker">11 PROJECTS</span>
     </div>
     <div class="projects-table">
       <table>
@@ -943,7 +952,7 @@
       <div class="constraint-card">
         <div class="constraint-icon">◆</div>
         <div class="constraint-title">โครงการหลัก = เครื่องยนต์หลัก</div>
-        <div class="constraint-text">โครงการหลัก 180 ลบ. ดูแลแบรนด์ + 80 SKU + ทีม Export / TikTok / Event / Trade / PMO ทั้งหมดฝังในนี้</div>
+        <div class="constraint-text">โครงการหลัก 228 ลบ. (งบทำงาน 190 + Buffer 38) ดูแลแบรนด์ + 80 SKU + ทีม Export / TikTok / Event / Trade / PMO ทั้งหมดฝังในนี้</div>
       </div>
       <div class="constraint-card">
         <div class="constraint-icon">◆</div>
@@ -953,19 +962,29 @@
       <div class="constraint-card">
         <div class="constraint-icon">◆</div>
         <div class="constraint-title">ตอบรัฐ 2 เรื่อง</div>
-        <div class="constraint-text">ร้านกองทุน×ธงฟ้า (25 ลบ.) + ปุ๋ยชุมชน (17 ลบ.) — ตรงตามนโยบายรัฐบาล</div>
+        <div class="constraint-text">ร้านกองทุน×ธงฟ้า (48 ลบ. / 200 ร้านเต็มรูปแบบ) + ปุ๋ยชุมชน (36 ลบ. / 30 ศูนย์) — ตรงตามนโยบายรัฐบาลและใช้งบเพียงพอจริง</div>
       </div>
       <div class="constraint-card">
         <div class="constraint-icon">◆</div>
         <div class="constraint-title">ขอความร่วมมือกระทรวงพาณิชย์</div>
         <div class="constraint-text">ใช้กลไก DITP เต็มรูปแบบ — อุดหนุนค่าบูธ 50-75% ทำให้ออก 5 งานใหญ่ในวงเงิน 70 ลบ.</div>
       </div>
+      <div class="constraint-card">
+        <div class="constraint-icon">◆</div>
+        <div class="constraint-title">บ่มเพาะเลือดใหม่ให้กองทุน</div>
+        <div class="constraint-text">VF Entrepreneur Academy (42 ลบ.) สร้างผู้ประกอบการรุ่นใหม่ 1,000+ คน — แก้ปัญหา Succession + ป้อนไอเดียสินค้าใหม่สำหรับปี 3 ผ่าน Seed Fund 20 ทีม</div>
+      </div>
+      <div class="constraint-card">
+        <div class="constraint-icon">◆</div>
+        <div class="constraint-title">Buffer ~20% ทุกโครงการ</div>
+        <div class="constraint-text">ทุกโครงการมีเงินสำรอง ~20% ของงบทำงาน (รวม 97 ลบ.) เผื่อความผันผวนราคาวัสดุ/Logistics, งาน Event ที่ต้องเพิ่ม, FX Export และโอกาสใหม่ระหว่างดำเนินโครงการ — เบิกใช้ได้ตามการอนุมัติของ Steering Committee</div>
+      </div>
     </div>
   </div>
 
   <div class="footer">
     <strong>VF Brand Development Portfolio — Year 2</strong><br>
-    10 Projects &middot; 400 MB &middot; 113 SKUs &middot; 10 Months &middot; Domestic 60% / Export 20% / Direct 20%<br>
+    11 Projects &middot; 579 MB (Working 482 + Buffer 97) &middot; 113 SKUs + 1,000 Entrepreneurs &middot; 10 Months &middot; Domestic 60% / Export 20% / Direct 20%<br>
     <span style="color:var(--blue);font-weight:700;">■</span>&nbsp; กองทุนหมู่บ้านและชุมชนเมืองแห่งชาติ &nbsp;<span style="color:var(--red);font-weight:700;">■</span>
   </div>
 
@@ -978,16 +997,17 @@
 
 <script>
 /* =========================
-   DATA — 10 PROJECTS
+   DATA — 11 PROJECTS
    TikTok + Miss Grand absorbed into Main Project as channels
+   Project 11 = VF Entrepreneur Academy (talent/succession)
 ========================= */
 const projects = [
   {
     id:1, name:'พัฒนาและต่อยอดแบรนด์กองทุนหมู่บ้าน VF ระยะที่ 2',
     role:'main', tag:'โครงการหลัก',
-    budget:180, sku:80, skuDetail:'20 รอด + 60 ใหม่',
+    budget:228, buffer:38, sku:80, skuDetail:'20 รอด + 60 ใหม่',
     startMonth:1, duration:10, color:'#dc2626',
-    split:{ dev:62, mkt:69.5, plat:24.5, sales:24 },
+    split:{ dev:65, mkt:74, plat:26, sales:25 },
     detail:{
       objective:'ยกระดับแบรนด์ VF เป็น Master Brand ระดับชาติพร้อมส่งออก — ต่อยอดสินค้าปี 1 ที่ผ่านการพิสูจน์ 20 SKU + พัฒนาสินค้าใหม่ 60 SKU ผ่าน 6 หมวดหลัก + วาง Omni-channel 5 ช่องทาง + สร้าง PMO กลางดูแลทั้งพอร์ตโฟลิโอ',
       keyActivities:[
@@ -999,7 +1019,7 @@ const projects = [
         'Miss Grand Ambassador: ขอความร่วมมือ Miss Grand Thailand เป็น Brand Ambassador + Roadshow 10 จังหวัด',
         'Modern Trade Negotiation: เจรจา Listing 5 เครือใหญ่ (Lotus\'s, Big C, TOPS, Gourmet, Villa)',
         'Export Team Build: จัดตั้งทีม Export Ready 5 คน + ขอ T Mark + SMEs Pro-active DITP',
-        'PMO: สำนักงานบริหารโครงการกลาง + Dashboard ติดตาม 10 โครงการ Real-time'
+        'PMO: สำนักงานบริหารโครงการกลาง + Dashboard ติดตาม 11 โครงการ Real-time'
       ],
       partners:[
         'TikTok Shop Thailand (ขอความร่วมมือ ไม่ทำเอกสารผูกพัน)',
@@ -1020,7 +1040,7 @@ const projects = [
         'ทีม Export-ready 5 คน + T Mark',
         'TikTok Official Store + 200 Live sessions',
         '10 Key Account agreement (MT 5 เครือ + E-com 5 ราย)',
-        'PMO + Real-time Dashboard ติดตาม 10 โครงการ'
+        'PMO + Real-time Dashboard ติดตาม 11 โครงการ'
       ],
       kpis:[
         'ยอดขายรวมพอร์ตโฟลิโอ 800+ ลบ.',
@@ -1035,7 +1055,7 @@ const projects = [
   {
     id:2, name:'ยกระดับอาหารทะเลแปรรูปชายฝั่งไทยสู่ตลาดสากล',
     role:'product', tag:'หมวดสินค้า',
-    budget:28, sku:4, startMonth:2, duration:8, color:'#1e40af',
+    budget:34, buffer:6, sku:4, startMonth:2, duration:8, color:'#1e40af',
     split:{ dev:12.5, mkt:8.65, plat:1.6, sales:5.25 },
     detail:{
       objective:'ยกระดับสินค้าทะเลแปรรูปจากกองทุนชายฝั่งให้ได้มาตรฐาน Export — ทำตลาดพรีเมียมสู่ตะวันออกกลาง / ญี่ปุ่น / จีน ผ่านบูธ Gulfood / Foodex / SIAL',
@@ -1077,8 +1097,8 @@ const projects = [
   {
     id:3, name:'พัฒนาผลไม้ไทยพรีเมียมสู่ตลาดส่งออก',
     role:'product', tag:'หมวดสินค้า',
-    budget:33, sku:4, startMonth:2, duration:9, color:'#3b82f6',
-    split:{ dev:15, mkt:10.1, plat:1.9, sales:6 },
+    budget:43, buffer:7, sku:4, startMonth:2, duration:9, color:'#3b82f6',
+    split:{ dev:17, mkt:10.1, plat:1.9, sales:7 },
     detail:{
       objective:'นำผลไม้ไทยเด่น (ทุเรียน / มะม่วง / ลำไย / มังคุด) จากกองทุนสวนผลไม้สู่ตลาด Export เกรดพรีเมียม โดยเฉพาะจีน-ฮ่องกง-ตะวันออกกลาง',
       keyActivities:[
@@ -1119,7 +1139,7 @@ const projects = [
   {
     id:4, name:'ส่งเสริมชาและกาแฟไทยจากยอดดอย',
     role:'product', tag:'หมวดสินค้า',
-    budget:25, sku:3, startMonth:3, duration:8, color:'#1e3a8a',
+    budget:30, buffer:5, sku:3, startMonth:3, duration:8, color:'#1e3a8a',
     split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 },
     detail:{
       objective:'ยกระดับชาและกาแฟจากกองทุนบนดอยเป็นสินค้า Single-origin พรีเมียม พร้อม Story-driven packaging สู่ตลาด Specialty',
@@ -1160,8 +1180,8 @@ const projects = [
   {
     id:5, name:'พัฒนาสมุนไพรไทยและผลิตภัณฑ์สุขภาพชุมชน',
     role:'product', tag:'หมวดสินค้า',
-    budget:25, sku:3, startMonth:3, duration:8, color:'#2563eb',
-    split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 },
+    budget:34, buffer:6, sku:3, startMonth:3, duration:8, color:'#2563eb',
+    split:{ dev:13, mkt:7.8, plat:1.4, sales:5.8 },
     detail:{
       objective:'พัฒนาสมุนไพรและผลิตภัณฑ์สุขภาพจากกองทุน (ขมิ้น / ไพล / กระชายดำ / เปล้าน้อย) เป็นสินค้าส่งออกพร้อม อย. + GMP',
       keyActivities:[
@@ -1201,7 +1221,7 @@ const projects = [
   {
     id:6, name:'ส่งเสริมหัตถกรรมและผ้าทอร่วมสมัย',
     role:'product', tag:'หมวดสินค้า',
-    budget:25, sku:3, startMonth:3, duration:8, color:'#60a5fa',
+    budget:30, buffer:5, sku:3, startMonth:3, duration:8, color:'#60a5fa',
     split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 },
     detail:{
       objective:'ยกระดับหัตถกรรมและผ้าทอจากกองทุน (ไหม / ฝ้าย / หวาย / เซรามิก) เป็น Lifestyle Brand ร่วมสมัย ตลาดคนรุ่นใหม่ + Export',
@@ -1242,7 +1262,7 @@ const projects = [
   {
     id:7, name:'ข้าวพรีเมียมและผลิตภัณฑ์มูลค่าเพิ่มจากข้าว',
     role:'product', tag:'หมวดสินค้า',
-    budget:21, sku:3, startMonth:3, duration:7, color:'#1d4ed8',
+    budget:25, buffer:4, sku:3, startMonth:3, duration:7, color:'#1d4ed8',
     split:{ dev:9, mkt:6.7, plat:1.1, sales:4.2 },
     detail:{
       objective:'ยกระดับข้าวหอมมะลิ / ข้าว GI / ข้าวอินทรีย์จากกองทุนนาข้าวเป็นแบรนด์ VF พรีเมียม + สินค้าเพิ่มมูลค่า (granola, ข้าวฮางงอก)',
@@ -1283,8 +1303,8 @@ const projects = [
   {
     id:8, name:'น้ำพริกและพริกแกงไทยสู่ครัวโลก (VF Thai Kitchen)',
     role:'product', tag:'หมวดสินค้า',
-    budget:21, sku:10, startMonth:4, duration:7, color:'#93c5fd',
-    split:{ dev:9, mkt:6.7, plat:1.1, sales:4.2 },
+    budget:29, buffer:5, sku:10, startMonth:4, duration:7, color:'#93c5fd',
+    split:{ dev:11, mkt:7, plat:1.2, sales:4.8 },
     detail:{
       objective:'ยกระดับ "น้ำพริกและพริกแกง" สูตรชุมชน 4 ภาคเป็น 10 SKU พร้อมขาย — เน้น Export สู่ตลาดต่างประเทศที่นิยมอาหารไทย + Modern Trade ในประเทศ ตอบโจทย์ตลาดอาหารไทยที่กำลังเติบโตทั่วโลก',
       keyActivities:[
@@ -1338,10 +1358,10 @@ const projects = [
   {
     id:9, name:'เครือข่ายร้านค้ากองทุน VF Smart Store × ธงฟ้า',
     role:'product', tag:'หมวดสินค้า',
-    budget:25, sku:0, startMonth:2, duration:9, color:'#b91c1c',
-    split:{ dev:2, mkt:8.3, plat:4.8, sales:9.9 },
+    budget:48, buffer:8, sku:0, startMonth:2, duration:9, color:'#b91c1c',
+    split:{ dev:3, mkt:8, plat:15, sales:14 },
     detail:{
-      objective:'ยกระดับร้านค้ากองทุนเป็น "VF Smart Store" — ซื้อสินค้าธงฟ้าจากกระทรวงพาณิชย์มาขายในชุมชน + ขายสินค้า VF พร้อมกัน (ตอบโจทย์รัฐบาล #1)',
+      objective:'ยกระดับร้านค้ากองทุนเป็น "VF Smart Store" 200 สาขาเต็มรูปแบบ — ซื้อสินค้าธงฟ้าจากกระทรวงพาณิชย์มาขายในชุมชน + ขายสินค้า VF พร้อมกัน (ตอบโจทย์รัฐบาล #1) — งบ 48 ลบ. แยกย่อยชัดเจน: ป้าย+Interior 10 ลบ. / POS 12 ลบ. / Training 2 ลบ. / Dashboard 3 ลบ. / Activation 5 ลบ. / PMO 5 ลบ. / Reserve 3 ลบ. + Buffer 8 ลบ.',
       keyActivities:[
         'คัดเลือก Pilot Store 200 ร้านจากทุกภาค',
         'ระบบ POS + Stock management เชื่อมทั้งเครือข่าย',
@@ -1377,10 +1397,10 @@ const projects = [
   {
     id:10, name:'ผลิตปุ๋ยอินทรีย์ชุมชน VF Green',
     role:'product', tag:'หมวดสินค้า',
-    budget:17, sku:3, startMonth:3, duration:8, color:'#7f1d1d',
-    split:{ dev:9, mkt:3.85, plat:0.9, sales:3.25 },
+    budget:36, buffer:6, sku:3, startMonth:3, duration:8, color:'#7f1d1d',
+    split:{ dev:15, mkt:5, plat:3, sales:7 },
     detail:{
-      objective:'ให้กองทุนหมู่บ้านผลิตปุ๋ยอินทรีย์มาตรฐานขายในพื้นที่ ลดต้นทุนเกษตรกร + ลดการใช้สารเคมี (ตอบโจทย์รัฐบาล #2)',
+      objective:'ให้กองทุนหมู่บ้านผลิตปุ๋ยอินทรีย์มาตรฐาน 30 ศูนย์ผลิต ขายในพื้นที่ ลดต้นทุนเกษตรกร + ลดการใช้สารเคมี (ตอบโจทย์รัฐบาล #2) — งบ 36 ลบ. แยกย่อย: อุปกรณ์ผลิต 30 ศูนย์ 12 ลบ. / R&D+ทะเบียน 2 ลบ. / Packaging 2 ลบ. / Training 2 ลบ. / Distribution 10 จว. 3 ลบ. / QC Lab+NPK Test 3 ลบ. / Marketing เกษตรกร 3 ลบ. / PMO 3 ลบ. + Buffer 6 ลบ.',
       keyActivities:[
         'สำรวจกองทุนที่มีศักยภาพผลิตปุ๋ย 30 แห่ง',
         'ถ่ายทอดสูตรและเทคโนโลยีมาตรฐาน',
@@ -1417,15 +1437,74 @@ const projects = [
       ]
     }
   },
+  {
+    id:11, name:'VF Entrepreneur Academy — บ่มเพาะผู้ประกอบการรุ่นใหม่',
+    role:'talent', tag:'บ่มเพาะคน',
+    budget:42, buffer:7, sku:0, startMonth:1, duration:10, color:'#4338ca',
+    split:{ dev:10, mkt:5, plat:5, sales:15 },
+    detail:{
+      objective:'สร้าง "เลือดใหม่" ให้กองทุนหมู่บ้าน 1,000+ คน ผ่านหลักสูตร Business School แบบกองทุนเอง — แก้ปัญหา Succession (กองทุนขาดคนรุ่นใหม่) + ต่อยอดพอร์ต VF ปี 3 ด้วยผู้ประกอบการเจ้าของไอเดียในชุมชน พร้อม Seed Fund ต่อยอดไอเดียเด่นๆ 20 ทีม',
+      keyActivities:[
+        'Recruit 1,200 ผู้สมัครจาก 4 ภาค (ลูกหลานสมาชิกกองทุน + ผู้ประกอบการรายย่อย + นักศึกษาจบใหม่ 22-40 ปี) — รับจริง 1,000 คน',
+        'ออกแบบหลักสูตร Hybrid 6 เดือน: Core (บริหาร/บัญชี/การตลาด/กฎหมาย) + Elective (Digital/Export/Food/Craft/Farm)',
+        'พัฒนา VF Academy Platform — LMS + E-learning + คลังบทเรียน 100+ หัวข้อ',
+        'Expert Pool 50 ท่าน: อาจารย์ ม.ชั้นนำ + เจ้าของธุรกิจจริง + ผู้บริหารองค์กรใหญ่',
+        'Mentorship Program: จับคู่ 1 Mentor : 20 Mentees (รวม 50 mentors)',
+        'Onsite Bootcamp 4 ภาค × 2 รุ่น — Workshop + Networking + Industry Visit',
+        'Business Pitch Day: คัดเลือก 20 ไอเดียเด่น → เข้าพอร์ต VF ปี 3',
+        'Seed Funding: 20 ทีม × 300,000-500,000 บ. ต่อยอดเป็นโครงการจริง',
+        'Alumni Network + กลไกป้อนคนเข้าเป็นกรรมการกองทุนรุ่นใหม่',
+        'ประกาศนียบัตรร่วมกับ ม.ชั้นนำ (ขอความร่วมมือ ไม่ทำเอกสารผูกพัน)'
+      ],
+      partners:[
+        'ม.เกษตรศาสตร์ (SME Program + Agri-Business)',
+        'สถาบันบัณฑิตฯ ศศินทร์ + NIDA Business School',
+        'สสว. (สำนักงานส่งเสริมวิสาหกิจ)',
+        'ตลาดหลักทรัพย์ฯ SET Foundation',
+        'ธ.ออมสิน / กสิกรไทย (การเงิน + สินเชื่อต่อยอด)',
+        'DEPA (Digital Transformation)',
+        'กระทรวงการอุดมศึกษาฯ',
+        'Alumni Entrepreneur Network จากทุกภาค'
+      ],
+      targetAreas:['ภาคเหนือ: เชียงใหม่ hub','ภาคอีสาน: ขอนแก่น hub','ภาคกลาง: กรุงเทพฯ hub','ภาคใต้: หาดใหญ่ hub','Online ครอบคลุม 77 จังหวัด'],
+      skuList:[
+        '— โครงการนี้สร้าง "คน" ไม่ใช่ "สินค้า"',
+        'ผลผลิตคือ: 1,000 ผู้ประกอบการเลือดใหม่',
+        '+ 20 ไอเดียสินค้าสำหรับพอร์ตโฟลิโอ VF ปี 3',
+        '+ 50 SMEs เกิดใหม่ในชุมชน (spin-off)'
+      ],
+      deliverables:[
+        '1,000+ คน จบหลักสูตร พร้อม Certificate ร่วมกับ ม.ชั้นนำ',
+        'VF Academy LMS Platform + คลังบทเรียน 100+ หัวข้อ',
+        'Onsite Bootcamp 8 ครั้ง (4 ภาค × 2 รุ่น)',
+        'Mentor Pool 50 ท่าน + ระบบจับคู่',
+        'Business Pitch Day: 20 ไอเดียผ่านคัดเลือก',
+        'Seed Fund 8-10 ลบ. กระจายให้ 20 ทีม',
+        'Alumni Network + ระบบป้อนคนเข้ากองทุน',
+        'Playbook "กรรมการกองทุนรุ่นใหม่" ใช้ต่อปี 3-5'
+      ],
+      kpis:[
+        'ผู้จบหลักสูตร 1,000+ คน (Retention 80%+)',
+        'Placement: 200+ เข้าเป็นกรรมการ/ผู้บริหารกองทุนรุ่นใหม่',
+        '20 ไอเดียสินค้าได้ Seed Fund → ต่อเข้าปี 3',
+        '50 SMEs ใหม่เกิดในชุมชน (หลักสูตรจบแล้ว 6 เดือน)',
+        'NPS ผู้เรียน 70+',
+        'อัตราสมาชิกกองทุนอายุ <40 ปี เพิ่มขึ้น 15% ใน 2 ปี'
+      ]
+    }
+  },
 ];
 
 const totalBudget = projects.reduce((s,p)=>s+p.budget,0);
+const totalWorking = projects.reduce((s,p)=>s+(p.split.dev+p.split.mkt+p.split.plat+p.split.sales),0);
+const totalBuffer = projects.reduce((s,p)=>s+(p.buffer||0),0);
 const totalSKU = projects.reduce((s,p)=>s+p.sku,0);
 const catTotals = projects.reduce((a,p)=>{
   a.dev+=p.split.dev; a.mkt+=p.split.mkt;
   a.plat+=p.split.plat; a.sales+=p.split.sales;
+  a.buffer+=(p.buffer||0);
   return a;
-},{dev:0,mkt:0,plat:0,sales:0});
+},{dev:0,mkt:0,plat:0,sales:0,buffer:0});
 
 Chart.defaults.font.family = 'Sarabun';
 Chart.defaults.color = '#475569';
@@ -1469,10 +1548,11 @@ const catLabels = [
   'การพัฒนาสินค้า (Dev)',
   'การตลาดและประชาสัมพันธ์ (Mkt)',
   'แพลตฟอร์มและระบบ (Platform)',
-  'ช่องทางการขาย (Sales)'
+  'ช่องทางการขาย (Sales)',
+  'เงินสำรองโครงการ (Buffer ~20%)'
 ];
-const catValues = [catTotals.dev, catTotals.mkt, catTotals.plat, catTotals.sales];
-const catColors = ['#dc2626','#1e40af','#60a5fa','#ef4444'];
+const catValues = [catTotals.dev, catTotals.mkt, catTotals.plat, catTotals.sales, catTotals.buffer];
+const catColors = ['#dc2626','#1e40af','#60a5fa','#ef4444','#64748b'];
 
 new Chart(document.getElementById('pieCategory'),{
   type:'doughnut',
@@ -1573,7 +1653,15 @@ projects.forEach((p)=>{
 });
 // Table hint
 tbody.insertAdjacentHTML('afterend',`
-  <tfoot><tr><td colspan="5" class="table-hint">💡 <strong>คลิกที่แถวใดก็ได้</strong> เพื่อดูรายละเอียดโครงการ — วัตถุประสงค์ / กิจกรรมหลัก / พาร์ทเนอร์ / พื้นที่ / SKU / Deliverables / KPIs</td></tr></tfoot>`);
+  <tfoot>
+    <tr style="background:#f1f5f9;font-weight:700;">
+      <td colspan="2" style="padding:12px 14px;color:var(--blue-dark);">รวมทั้งสิ้น 11 โครงการ</td>
+      <td style="text-align:right;padding:12px 14px;color:var(--red);font-size:15px;">${totalBudget}<small style="display:block;font-size:10px;font-weight:500;color:var(--gray-600);">(${totalWorking} ทำงาน + ${totalBuffer} สำรอง)</small></td>
+      <td style="text-align:center;padding:12px 14px;color:var(--blue-dark);">${totalSKU} SKU</td>
+      <td style="text-align:center;padding:12px 14px;color:var(--gray-600);">10 เดือน</td>
+    </tr>
+    <tr><td colspan="5" class="table-hint">💡 <strong>คลิกที่แถวใดก็ได้</strong> เพื่อดูรายละเอียดโครงการ — วัตถุประสงค์ / กิจกรรมหลัก / พาร์ทเนอร์ / พื้นที่ / SKU / Deliverables / KPIs</td></tr>
+  </tfoot>`);
 
 /* MODAL RENDER */
 function openProjectModal(id){
@@ -1592,12 +1680,18 @@ function openProjectModal(id){
   const deliverablesHTML = d.deliverables.map(a=>`<li>${a}</li>`).join('');
   const kpisHTML = d.kpis.map(a=>`<div class="kpi-card-mini">${a}</div>`).join('');
 
+  const workingSum = p.split.dev + p.split.mkt + p.split.plat + p.split.sales;
+  const bufferPct = Math.round((p.buffer / workingSum) * 100);
   const budgetHTML = `
     <div class="modal-budget-grid">
       <div class="budget-cell-card dev"><div class="bc-label">Dev</div><div class="bc-val">${p.split.dev}</div><div class="bc-unit">ลบ.</div></div>
       <div class="budget-cell-card mkt"><div class="bc-label">Marketing</div><div class="bc-val">${p.split.mkt}</div><div class="bc-unit">ลบ.</div></div>
       <div class="budget-cell-card plat"><div class="bc-label">Platform</div><div class="bc-val">${p.split.plat}</div><div class="bc-unit">ลบ.</div></div>
       <div class="budget-cell-card sales"><div class="bc-label">Sales</div><div class="bc-val">${p.split.sales}</div><div class="bc-unit">ลบ.</div></div>
+      <div class="budget-cell-card buffer"><div class="bc-label">Buffer ~${bufferPct}%</div><div class="bc-val">${p.buffer}</div><div class="bc-unit">ลบ.</div></div>
+    </div>
+    <div style="margin-top:10px;font-size:12.5px;color:var(--gray-600);text-align:center;">
+      💡 งบทำงาน <strong>${workingSum} ลบ.</strong> + สำรอง <strong>${p.buffer} ลบ.</strong> = รวม <strong>${p.budget} ลบ.</strong>
     </div>`;
 
   const html = `
@@ -1724,7 +1818,7 @@ productSection.insertAdjacentHTML('beforeend', heroHTML);
 
 // Supplementary header
 productSection.insertAdjacentHTML('beforeend',`
-  <div class="sku-supp-title">สินค้าจากโครงการเสริม 9 โครงการ &middot; รวม ${suppTotal} SKU</div>`);
+  <div class="sku-supp-title">สินค้าจากโครงการเสริม 10 โครงการ &middot; รวม ${suppTotal} SKU (โครงการ #11 บ่มเพาะคน ไม่มี SKU)</div>`);
 
 // Grid of supplementary cards
 let gridHTML = '<div class="sku-supp-grid">';
