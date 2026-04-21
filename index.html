@@ -615,7 +615,7 @@
   <div class="hero">
     <div class="eyebrow">VF Brand Development Portfolio</div>
     <h1>โครงการพัฒนาแบรนด์ <span class="accent">VF</span> กองทุนหมู่บ้าน ปีที่ 2</h1>
-    <p class="subtitle">Dashboard ภาพรวม — 10 โครงการภายใต้แบรนด์แม่ VF เน้นขยายการขายในประเทศ ส่งออก และตอบโจทย์รัฐบาล 2 เรื่อง งบรวม 400 ลบ. ดำเนินงานภายใน 10 เดือน สินค้ารวม 105 SKU</p>
+    <p class="subtitle">Dashboard ภาพรวม — 10 โครงการภายใต้แบรนด์แม่ VF เน้นขยายการขายในประเทศ ส่งออก และตอบโจทย์รัฐบาล 2 เรื่อง งบรวม 400 ลบ. ดำเนินงานภายใน 10 เดือน สินค้ารวม 113 SKU</p>
     <div class="parent-tag">★ ต่อเนื่องจากโครงการ 153 ปีที่ 1 ★</div>
   </div>
 
@@ -629,7 +629,7 @@
     </div>
     <div class="stat-card red">
       <div class="stat-label">สินค้าเข้าแบรนด์ VF</div>
-      <div class="stat-value">105</div>
+      <div class="stat-value">113</div>
       <div class="stat-unit">SKU</div>
       <div class="stat-sub">80 จากหลัก (20 รอด+60 ใหม่) + 25 จากเสริม</div>
     </div>
@@ -652,13 +652,13 @@
     <div class="section-title">
       ช่องทางการขายของสินค้า VF <span class="kicker">HOW WE ACTUALLY SELL</span>
     </div>
-    <div class="section-subtitle">สินค้า 105 SKU ภายใต้แบรนด์ VF จะถูกขายผ่าน 5 ช่องทางที่แบ่งความรับผิดชอบชัดเจน ไม่มีช่องทางไหนลอยเดี่ยวเป็นโครงการ แต่ฝังอยู่ในโครงการสินค้าและโครงการหลัก</div>
+    <div class="section-subtitle">สินค้า 113 SKU ภายใต้แบรนด์ VF จะถูกขายผ่าน 5 ช่องทางที่แบ่งความรับผิดชอบชัดเจน ไม่มีช่องทางไหนลอยเดี่ยวเป็นโครงการ แต่ฝังอยู่ในโครงการสินค้าและโครงการหลัก</div>
 
     <div class="channel-hero">
       <div class="channel-hero-inner">
         <h3>ขายได้จริง ด้วย 5 ช่องทาง Omni-channel</h3>
         <p>ทุกสินค้าจาก VF มีเส้นทางขายที่กำหนดล่วงหน้า — ไม่ใช่แค่พัฒนาแล้วรอให้ขายเอง แต่มีทีม มีพาร์ทเนอร์ และมีงบ Activate แต่ละช่องทางในโครงการหลัก</p>
-        <div class="big-num">105 <small>SKU × 5 ช่องทาง</small></div>
+        <div class="big-num">113 <small>SKU × 5 ช่องทาง</small></div>
       </div>
     </div>
 
@@ -965,7 +965,7 @@
 
   <div class="footer">
     <strong>VF Brand Development Portfolio — Year 2</strong><br>
-    10 Projects &middot; 400 MB &middot; 105 SKUs &middot; 10 Months &middot; Domestic 60% / Export 20% / Direct 20%<br>
+    10 Projects &middot; 400 MB &middot; 113 SKUs &middot; 10 Months &middot; Domestic 60% / Export 20% / Direct 20%<br>
     <span style="color:var(--blue);font-weight:700;">■</span>&nbsp; กองทุนหมู่บ้านและชุมชนเมืองแห่งชาติ &nbsp;<span style="color:var(--red);font-weight:700;">■</span>
   </div>
 
@@ -1281,41 +1281,57 @@ const projects = [
     }
   },
   {
-    id:8, name:'ขนมไทยและเบเกอรี่สมัยใหม่ร่วมสมัย',
+    id:8, name:'น้ำพริกและพริกแกงไทยสู่ครัวโลก (VF Thai Kitchen)',
     role:'product', tag:'หมวดสินค้า',
-    budget:21, sku:2, startMonth:4, duration:6, color:'#93c5fd',
+    budget:21, sku:10, startMonth:4, duration:7, color:'#93c5fd',
     split:{ dev:9, mkt:6.7, plat:1.1, sales:4.2 },
     detail:{
-      objective:'ยกระดับขนมไทย / เบเกอรี่จากชุมชนเป็นสินค้า Ready-to-pick สำหรับ Modern Trade + Café + CVS',
+      objective:'ยกระดับ "น้ำพริกและพริกแกง" สูตรชุมชน 4 ภาคเป็น 10 SKU พร้อมขาย — เน้น Export สู่ตลาดต่างประเทศที่นิยมอาหารไทย + Modern Trade ในประเทศ ตอบโจทย์ตลาดอาหารไทยที่กำลังเติบโตทั่วโลก',
       keyActivities:[
-        'R&D Shelf-life extension (MAP / retort)',
-        'ขึ้นทะเบียน HACCP + อย.',
-        'Cafe Collab — Café Amazon / Starbucks',
-        'Packaging งามพร้อมเข้าห้าง + Gift Box ฤดูกาล',
-        'ทดสอบตลาด CVS'
+        'คัดเลือกสูตรต้นตำรับจากกองทุนแต่ละภาค (5 น้ำพริก + 5 พริกแกง)',
+        'R&D Standardize สูตร + Shelf-life extension (retort pouch / vacuum jar)',
+        'ขึ้นทะเบียน HACCP + GMP + อย. + Halal',
+        'พัฒนา Packaging 2 แบบ: Jar พรีเมียมเข้าห้าง + Pouch สำหรับ Export',
+        'ทดสอบตลาดบูธ Gulfood / Foodex / THAIFEX (ผ่านโครงการหลัก)',
+        'Chef Collab + Recipe Card สำหรับทำเมนูไทยง่ายๆ ที่บ้าน',
+        'Distribution ทั้ง Modern Trade ในประเทศ + ร้านอาหารไทยต่างประเทศ'
       ],
       partners:[
-        'ม.สวนดุสิต (Culinary Arts)',
-        'Café Amazon (ขอความร่วมมือ pilot)',
-        '7-Eleven Private Label (ขอความร่วมมือ)',
-        'กองทุนขนม-เบเกอรี่ชุมชน'
+        'ม.สวนดุสิต (Culinary Arts + Food Science)',
+        'กรมส่งเสริมอุตสาหกรรม (SME)',
+        'กลุ่มแม่บ้านเกษตรกร 4 ภาค',
+        'สมาคมเชฟไทยในต่างประเทศ (ขอความร่วมมือ)',
+        'DITP — ช่อง Export ร้านอาหารไทยทั่วโลก 15,000+ แห่ง',
+        'ห้างโมเดิร์นเทรด (ผ่านโครงการหลัก)'
       ],
-      targetAreas:['เพชรบุรี','นครปฐม','สมุทรสงคราม','ราชบุรี','กรุงเทพฯ'],
+      targetAreas:['เชียงใหม่ (น้ำพริกหนุ่ม/แกงเหนือ)','ขอนแก่น/อุดร (น้ำพริกตาแดง/ปลาร้า)','ภูเก็ต/นครศรีฯ (น้ำพริกกะปิ/แกงใต้)','เพชรบุรี/ราชบุรี (แกงเผ็ดกลาง)','กรุงเทพฯ (สำนักงานกลาง)'],
       skuList:[
-        'ขนมไทยพรีเมียม Gift Box (ทองหยิบ-ฝอยทอง)',
-        'Cookie / Brownie ผสมวัตถุดิบไทย (มะพร้าว / ทุเรียน)'
+        '1. น้ำพริกหนุ่มเหนือ VF (retort pouch + jar)',
+        '2. น้ำพริกตาแดงอีสาน VF',
+        '3. น้ำพริกกะปิภาคใต้ VF',
+        '4. น้ำพริกเผาภาคกลาง VF (สูตรเข้มข้น)',
+        '5. น้ำพริกปลาร้าอีสาน VF (สำหรับตลาด CLMV)',
+        '6. พริกแกงเขียวหวาน VF (สูตร Export)',
+        '7. พริกแกงเผ็ดแดง VF',
+        '8. พริกแกงมัสมั่น VF',
+        '9. พริกแกงพะแนง VF',
+        '10. พริกแกงส้มภาคใต้ VF'
       ],
       deliverables:[
-        '2 SKU HACCP + อย.',
-        '7-Eleven Pilot Listing 500 สาขา',
-        'Café Amazon Pilot 50 สาขา',
-        'Gift Box Limited Edition 2 ฤดู'
+        '10 SKU พร้อม HACCP + GMP + อย. + Halal cert',
+        'Shelf-life 12+ เดือน (retort pouch) และ 18 เดือน (jar)',
+        'Packaging 2 รูปแบบ: Jar เข้าห้าง + Pouch Export',
+        'Recipe Card QR — วิธีทำเมนูไทย 20 เมนู',
+        'บูธร่วม Gulfood / THAIFEX ผ่านโครงการหลัก',
+        'Sample kit ส่งร้านอาหารไทยต่างประเทศ 500 ราย'
       ],
       kpis:[
-        '7-Eleven + Café Amazon Listing',
-        'ยอดขาย 18 ลบ.',
-        'Shelf-life 90+ วัน',
-        'Reorder rate 60%+'
+        '10 SKU ผ่านมาตรฐาน Export ครบ',
+        'ยอดขายปี 2: 45+ ลบ. (Domestic 25 + Export 20)',
+        'Export order 5+ ประเทศ (USA, UK, ออสเตรเลีย, ญี่ปุ่น, CLMV)',
+        'Listing Modern Trade 5 เครือ + CVS (7-Eleven) pilot',
+        'Shelf-life 12+ เดือน ไม่ต้องแช่เย็น',
+        'ร้านอาหารไทยต่างประเทศใช้เป็นวัตถุดิบ 200+ ร้าน'
       ]
     }
   },
