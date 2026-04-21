@@ -485,6 +485,126 @@
   ::-webkit-scrollbar-track{background:var(--gray-100);}
   ::-webkit-scrollbar-thumb{background:var(--gray-300);border-radius:5px;}
   ::-webkit-scrollbar-thumb:hover{background:var(--blue);}
+
+  /* ========== CLICKABLE PROJECT ROW ========== */
+  tbody tr.proj-row{cursor:pointer;position:relative;}
+  tbody tr.proj-row:hover .proj-name{color:var(--blue);}
+  tbody tr.proj-row.main-row:hover .proj-name{color:var(--red);}
+  .click-hint{
+    display:inline-block;margin-left:8px;font-size:10px;color:var(--gray-400);
+    font-weight:500;letter-spacing:.5px;vertical-align:middle;
+    transition:color .2s, transform .2s;
+  }
+  tbody tr.proj-row:hover .click-hint{color:var(--blue);transform:translateX(3px);}
+  tbody tr.proj-row.main-row:hover .click-hint{color:var(--red);}
+  .table-hint{
+    text-align:center;font-size:12px;color:var(--gray-500);
+    padding:12px;background:var(--gray-50);border-top:1px solid var(--gray-100);
+    letter-spacing:.5px;
+  }
+  .table-hint strong{color:var(--blue);}
+
+  /* ========== MODAL ========== */
+  .modal-overlay{
+    position:fixed;inset:0;background:rgba(15,23,42,.75);
+    backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+    display:none;align-items:flex-start;justify-content:center;
+    z-index:9999;padding:40px 20px;overflow-y:auto;
+    animation:fadeIn .25s ease-out;
+  }
+  .modal-overlay.active{display:flex;}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @keyframes slideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+  .modal-content{
+    background:var(--white);border-radius:16px;width:100%;max-width:960px;
+    box-shadow:0 25px 60px rgba(0,0,0,.4);
+    animation:slideUp .3s ease-out;position:relative;overflow:hidden;
+    margin:auto;
+  }
+  .modal-header{
+    background:linear-gradient(135deg,var(--blue-dark) 0%,var(--blue) 100%);
+    color:var(--white);padding:32px 36px 26px;position:relative;
+  }
+  .modal-header.main{background:linear-gradient(135deg,#991b1b 0%,var(--red) 100%);}
+  .modal-tag{
+    display:inline-block;padding:4px 12px;border-radius:999px;
+    background:rgba(255,255,255,.18);color:var(--white);font-size:11px;
+    font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px;
+  }
+  .modal-title{font-size:22px;font-weight:800;line-height:1.3;color:var(--white);margin-bottom:10px;padding-right:50px;}
+  .modal-meta{display:flex;gap:24px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,.85);}
+  .modal-meta-item{display:flex;align-items:center;gap:6px;}
+  .modal-meta-item strong{color:var(--white);font-weight:700;}
+  .modal-close{
+    position:absolute;top:22px;right:22px;width:36px;height:36px;
+    background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.3);
+    border-radius:50%;color:var(--white);font-size:18px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    transition:background .2s,transform .2s;font-weight:700;line-height:1;
+  }
+  .modal-close:hover{background:rgba(255,255,255,.3);transform:rotate(90deg);}
+  .modal-body{padding:32px 36px 40px;max-height:70vh;overflow-y:auto;}
+  .modal-section{margin-bottom:28px;}
+  .modal-section:last-child{margin-bottom:0;}
+  .modal-section-title{
+    font-size:11px;font-weight:800;color:var(--blue);letter-spacing:1.8px;
+    text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;
+    border-bottom:2px solid var(--blue-100);
+  }
+  .modal-section.main-theme .modal-section-title{color:var(--red);border-bottom-color:var(--red-100);}
+  .modal-objective{
+    font-size:15px;line-height:1.75;color:var(--gray-700);
+    background:var(--blue-50);padding:18px 20px;border-radius:10px;
+    border-left:4px solid var(--blue);
+  }
+  .modal-content-main .modal-objective{background:var(--red-50);border-left-color:var(--red);}
+  .modal-list{list-style:none;padding:0;margin:0;}
+  .modal-list li{
+    position:relative;padding:10px 0 10px 28px;font-size:14px;line-height:1.7;
+    color:var(--gray-700);border-bottom:1px dashed var(--gray-100);
+  }
+  .modal-list li:last-child{border-bottom:none;}
+  .modal-list li::before{
+    content:"▸";position:absolute;left:6px;top:10px;color:var(--blue);
+    font-weight:700;font-size:14px;
+  }
+  .modal-content-main .modal-list li::before{color:var(--red);}
+  .modal-tag-list{display:flex;flex-wrap:wrap;gap:8px;}
+  .modal-tag-pill{
+    display:inline-block;padding:6px 14px;border-radius:999px;
+    background:var(--blue-50);color:var(--blue-dark);font-size:12.5px;font-weight:500;
+    border:1px solid var(--blue-100);
+  }
+  .modal-content-main .modal-tag-pill{background:var(--red-50);color:var(--red);border-color:var(--red-100);}
+  .modal-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  @media(max-width:700px){.modal-grid-2{grid-template-columns:1fr;}}
+  .modal-budget-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:8px;}
+  @media(max-width:700px){.modal-budget-grid{grid-template-columns:repeat(2,1fr);}}
+  .budget-cell-card{
+    background:var(--gray-50);border:1.5px solid var(--border);border-radius:10px;
+    padding:14px 12px;text-align:center;
+  }
+  .budget-cell-card .bc-label{
+    font-size:10px;color:var(--gray-500);font-weight:700;letter-spacing:.8px;
+    text-transform:uppercase;margin-bottom:6px;
+  }
+  .budget-cell-card .bc-val{font-size:18px;font-weight:800;color:var(--blue-dark);line-height:1;}
+  .budget-cell-card .bc-unit{font-size:11px;color:var(--gray-500);margin-top:2px;}
+  .budget-cell-card.dev{border-top:3px solid #dc2626;}
+  .budget-cell-card.mkt{border-top:3px solid #1e40af;}
+  .budget-cell-card.plat{border-top:3px solid #60a5fa;}
+  .budget-cell-card.sales{border-top:3px solid #ef4444;}
+  .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;}
+  .kpi-card-mini{
+    background:linear-gradient(135deg,var(--blue-50) 0%,var(--white) 100%);
+    border:1.5px solid var(--blue-100);border-radius:10px;padding:12px 14px;
+    font-size:13.5px;color:var(--gray-700);line-height:1.5;
+    border-left:4px solid var(--blue);
+  }
+  .modal-content-main .kpi-card-mini{
+    background:linear-gradient(135deg,var(--red-50) 0%,var(--white) 100%);
+    border-color:var(--red-100);border-left-color:var(--red);
+  }
 </style>
 </head>
 <body>
@@ -851,6 +971,11 @@
 
 </div>
 
+<!-- PROJECT DETAIL MODAL -->
+<div class="modal-overlay" id="projectModal" onclick="if(event.target===this)closeProjectModal()">
+  <div class="modal-content" id="modalContent"></div>
+</div>
+
 <script>
 /* =========================
    DATA — 10 PROJECTS
@@ -862,61 +987,419 @@ const projects = [
     role:'main', tag:'โครงการหลัก',
     budget:180, sku:80, skuDetail:'20 รอด + 60 ใหม่',
     startMonth:1, duration:10, color:'#dc2626',
-    split:{ dev:62, mkt:69.5, plat:24.5, sales:24 }
+    split:{ dev:62, mkt:69.5, plat:24.5, sales:24 },
+    detail:{
+      objective:'ยกระดับแบรนด์ VF เป็น Master Brand ระดับชาติพร้อมส่งออก — ต่อยอดสินค้าปี 1 ที่ผ่านการพิสูจน์ 20 SKU + พัฒนาสินค้าใหม่ 60 SKU ผ่าน 6 หมวดหลัก + วาง Omni-channel 5 ช่องทาง + สร้าง PMO กลางดูแลทั้งพอร์ตโฟลิโอ',
+      keyActivities:[
+        'Brand Refresh: รีเฟรช Brand Guideline v2, ระบบ Packaging มาตรฐานสำหรับ 80 SKU, ฟิล์มโฆษณา Master, Key Visual ปี 2',
+        'SKU Retention: ทบทวนและยกระดับสินค้าปี 1 ที่ผ่านพิสูจน์ตลาด 20 SKU (Hero Products)',
+        'New SKU Development: พัฒนาสินค้าใหม่ 60 SKU ใน 6 หมวด (ทะเล/ผลไม้/ชา-กาแฟ/สมุนไพร/หัตถกรรม/ข้าว-ขนม) ประสานกับโครงการย่อย 2–10',
+        'Omni-Channel Setup: วางระบบ 5 ช่องทาง — Modern Trade / TikTok Shop / VF Smart Store×ธงฟ้า / Event-Roadshow / Export',
+        'TikTok Shop Partnership: ขอความร่วมมือ TikTok Shop Thailand เปิด Official Store + Live Commerce + KOL 35 ท่าน × 10 เดือน',
+        'Miss Grand Ambassador: ขอความร่วมมือ Miss Grand Thailand เป็น Brand Ambassador + Roadshow 10 จังหวัด',
+        'Modern Trade Negotiation: เจรจา Listing 5 เครือใหญ่ (Lotus\'s, Big C, TOPS, Gourmet, Villa)',
+        'Export Team Build: จัดตั้งทีม Export Ready 5 คน + ขอ T Mark + SMEs Pro-active DITP',
+        'PMO: สำนักงานบริหารโครงการกลาง + Dashboard ติดตาม 10 โครงการ Real-time'
+      ],
+      partners:[
+        'TikTok Shop Thailand (ขอความร่วมมือ ไม่ทำเอกสารผูกพัน)',
+        'Miss Grand Thailand (ขอความร่วมมือ Brand Ambassador)',
+        'ห้างโมเดิร์นเทรด 5 เครือ: Lotus\'s / Big C / TOPS / Gourmet / Villa Market',
+        'DITP กระทรวงพาณิชย์ (SMEs Pro-active + Thailand Pavilion)',
+        'ม.เกษตรศาสตร์ + ม.มหิดล (R&D food science)',
+        'Distributor ภูมิภาค 4 ภาค'
+      ],
+      targetAreas:['ทั่วประเทศ 77 จังหวัด','Export 5 งานใหญ่ (Dubai, Shanghai, Tokyo, USA, BKK)'],
+      skuList:[
+        '20 Hero SKU (สินค้าปี 1 ที่รอดและยกระดับ)',
+        '60 New SKU กระจายใน 6 หมวดผ่านโครงการ #2–#10'
+      ],
+      deliverables:[
+        'Brand Guideline v2 + Master Packaging System 80 SKU',
+        '80 SKU พร้อมวางขาย (Barcode + อย. + GMP)',
+        'ทีม Export-ready 5 คน + T Mark',
+        'TikTok Official Store + 200 Live sessions',
+        '10 Key Account agreement (MT 5 เครือ + E-com 5 ราย)',
+        'PMO + Real-time Dashboard ติดตาม 10 โครงการ'
+      ],
+      kpis:[
+        'ยอดขายรวมพอร์ตโฟลิโอ 800+ ลบ.',
+        'Mix: Domestic 60% / Export 20% / Direct+Event 20%',
+        'Brand Awareness จาก 18% → 40%+',
+        'Listing ห้างใหญ่ 5 เครือ',
+        'GMV TikTok Shop 150+ ลบ./ปี',
+        'NPS ผู้บริโภค 60+'
+      ]
+    }
   },
   {
     id:2, name:'ยกระดับอาหารทะเลแปรรูปชายฝั่งไทยสู่ตลาดสากล',
     role:'product', tag:'หมวดสินค้า',
     budget:28, sku:4, startMonth:2, duration:8, color:'#1e40af',
-    split:{ dev:12.5, mkt:8.65, plat:1.6, sales:5.25 }
+    split:{ dev:12.5, mkt:8.65, plat:1.6, sales:5.25 },
+    detail:{
+      objective:'ยกระดับสินค้าทะเลแปรรูปจากกองทุนชายฝั่งให้ได้มาตรฐาน Export — ทำตลาดพรีเมียมสู่ตะวันออกกลาง / ญี่ปุ่น / จีน ผ่านบูธ Gulfood / Foodex / SIAL',
+      keyActivities:[
+        'R&D สูตรและเทคโนโลยียืดอายุ (retort / freeze-dry / vacuum)',
+        'พัฒนาบรรจุภัณฑ์ Export-grade + labelling หลายภาษา',
+        'ขึ้นทะเบียน HACCP / GMP / Halal / อย.',
+        'ทดสอบตลาดใน Gulfood / Foodex / THAIFEX ผ่านบูธโครงการหลัก',
+        'สร้าง Cold chain + logistics plan'
+      ],
+      partners:[
+        'กรมประมง',
+        'สมาคมประมงแห่งประเทศไทย',
+        'ม.วลัยลักษณ์ (Food Lab)',
+        'DITP (SMEs Pro-active)',
+        'กองทุนประมงชายฝั่ง 5 จังหวัด'
+      ],
+      targetAreas:['สุราษฎร์ธานี','ชุมพร','ระนอง','ประจวบคีรีขันธ์','กระบี่'],
+      skuList:[
+        'น้ำพริกทะเลพรีเมียม (retort pouch)',
+        'ปลาแห้ง / กุ้งแห้ง รีแบรนด์ packaging ใหม่',
+        'ทูน่า / ปลากระป๋องพรีเมียมในแบรนด์ VF',
+        'Seafood snack / crispy fish skin'
+      ],
+      deliverables:[
+        '4 SKU ผ่าน Halal + HACCP + GMP',
+        'Export-ready samples + COA',
+        'บูธร่วม Gulfood / Foodex ผ่านโครงการหลัก',
+        'Cold chain agreement 1 ราย'
+      ],
+      kpis:[
+        '4 SKU ผ่านมาตรฐาน Export ครบ',
+        'ยอดขาย 35+ ลบ./ปี',
+        'Listing ห้าง 2 เครือ',
+        'Export order 3 lead จาก Gulfood/Foodex'
+      ]
+    }
   },
   {
     id:3, name:'พัฒนาผลไม้ไทยพรีเมียมสู่ตลาดส่งออก',
     role:'product', tag:'หมวดสินค้า',
     budget:33, sku:4, startMonth:2, duration:9, color:'#3b82f6',
-    split:{ dev:15, mkt:10.1, plat:1.9, sales:6 }
+    split:{ dev:15, mkt:10.1, plat:1.9, sales:6 },
+    detail:{
+      objective:'นำผลไม้ไทยเด่น (ทุเรียน / มะม่วง / ลำไย / มังคุด) จากกองทุนสวนผลไม้สู่ตลาด Export เกรดพรีเมียม โดยเฉพาะจีน-ฮ่องกง-ตะวันออกกลาง',
+      keyActivities:[
+        'Sourcing สวน GAP + กองทุนผลไม้ 20 แห่ง',
+        'พัฒนา Freeze-dried / IQF / อบแห้งพรีเมียม',
+        'Cold chain + Export logistics partnership',
+        'ขอ GAP / Organic / GI cert',
+        'ทดสอบตลาด SIAL Shanghai + THAIFEX Anuga Asia'
+      ],
+      partners:[
+        'กรมส่งเสริมการเกษตร',
+        'สวนผลไม้กองทุน ระยอง/จันทบุรี/เชียงใหม่',
+        'ม.เกษตรศาสตร์ (Post-harvest)',
+        'สมาคมการค้าผลไม้ไทย',
+        'DITP (Thailand Pavilion SIAL Shanghai)'
+      ],
+      targetAreas:['จันทบุรี','ระยอง','ตราด','เชียงใหม่','ลำพูน'],
+      skuList:[
+        'ทุเรียน Freeze-dried VF Premium',
+        'มังคุดอบแห้ง single-serve',
+        'ลำไยแห้งพรีเมียม gift pack',
+        'น้ำผลไม้ UHT VF (100% juice)'
+      ],
+      deliverables:[
+        '4 SKU Export pack + Multi-language label',
+        'Cold chain agreement 2 ราย',
+        'GAP Orchard 20 แห่ง certified',
+        'บูธ SIAL Shanghai 1 slot + sample book'
+      ],
+      kpis:[
+        'Export 50+ ลบ.',
+        'GAP Orchard 20 แห่ง',
+        'Listing ห้างจีน 2 เครือ (Hema / Sam\'s Club)',
+        'Export lead 5 รายจาก SIAL'
+      ]
+    }
   },
   {
     id:4, name:'ส่งเสริมชาและกาแฟไทยจากยอดดอย',
     role:'product', tag:'หมวดสินค้า',
     budget:25, sku:3, startMonth:3, duration:8, color:'#1e3a8a',
-    split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 }
+    split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 },
+    detail:{
+      objective:'ยกระดับชาและกาแฟจากกองทุนบนดอยเป็นสินค้า Single-origin พรีเมียม พร้อม Story-driven packaging สู่ตลาด Specialty',
+      keyActivities:[
+        'Cupping & Grading โดย Q-grader',
+        'Specialty Roast + Drip Bag development',
+        'Packaging เน้น Story-telling แต่ละดอย',
+        'ขอ Fair Trade / Specialty Coffee cert',
+        'Tasting Event ใน Café Amazon / Starbucks'
+      ],
+      partners:[
+        'โครงการหลวง (ขอความร่วมมือ)',
+        'สถาบันชาและกาแฟฯ ม.แม่ฟ้าหลวง',
+        'กรมส่งเสริมการเกษตร',
+        'Specialty Coffee Association of Thailand',
+        'Café Amazon (ขอความร่วมมือทดลองวาง)'
+      ],
+      targetAreas:['เชียงราย','เชียงใหม่','น่าน','ลำปาง','แม่ฮ่องสอน'],
+      skuList:[
+        'Specialty Coffee (Drip Bag + Whole Beans) 3 origins',
+        'Oolong Tea Premium (ดอยแม่สลอง)',
+        'Herbal Tea Blend สูตรชุมชน'
+      ],
+      deliverables:[
+        '3 SKU พร้อม Story-driven packaging',
+        'Specialty Coffee certificate',
+        'Tasting Event 5 สาขา Café Amazon',
+        'Export prep USA Natural Products'
+      ],
+      kpis:[
+        '3 SKU Listing Starbucks / Café Amazon',
+        'ยอดขาย 22 ลบ.',
+        'Export lead USA 3 ราย',
+        'Barista train 30 คนในเครือข่ายกองทุน'
+      ]
+    }
   },
   {
     id:5, name:'พัฒนาสมุนไพรไทยและผลิตภัณฑ์สุขภาพชุมชน',
     role:'product', tag:'หมวดสินค้า',
     budget:25, sku:3, startMonth:3, duration:8, color:'#2563eb',
-    split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 }
+    split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 },
+    detail:{
+      objective:'พัฒนาสมุนไพรและผลิตภัณฑ์สุขภาพจากกองทุน (ขมิ้น / ไพล / กระชายดำ / เปล้าน้อย) เป็นสินค้าส่งออกพร้อม อย. + GMP',
+      keyActivities:[
+        'R&D Standardized extract (HPLC-controlled)',
+        'ขึ้นทะเบียน อย. (10-5*) + GMP Plant',
+        'พัฒนา Packaging medical-grade',
+        'ทดสอบตลาด Natural Products Expo USA',
+        'จัดทำ Safety dossier สำหรับ EU/USA'
+      ],
+      partners:[
+        'กรมการแพทย์แผนไทยและการแพทย์ทางเลือก',
+        'ม.มหิดล (Phytochemistry Lab)',
+        'สำนักงาน อย.',
+        'กองทุนชุมชนสมุนไพร 10 แห่ง',
+        'Thai Herbal Association'
+      ],
+      targetAreas:['สกลนคร','เลย','ปราจีนบุรี','นครปฐม','อุดรธานี'],
+      skuList:[
+        'ยาหม่องไพลสูตรชุมชนยกระดับ',
+        'แคปซูลขมิ้นชันมาตรฐาน',
+        'ชาสมุนไพรกระชายดำ'
+      ],
+      deliverables:[
+        '3 SKU อย.ผ่าน + GMP',
+        'Export doc USA + EU ready',
+        'Safety dossier + COA',
+        'บูธ Anaheim Natural Expo 1 slot'
+      ],
+      kpis:[
+        '3 SKU อย. + GMP',
+        'ยอดขาย 22 ลบ.',
+        'Anaheim Natural Expo 5 lead',
+        'ขึ้นทะเบียน USA FDA 1 SKU'
+      ]
+    }
   },
   {
     id:6, name:'ส่งเสริมหัตถกรรมและผ้าทอร่วมสมัย',
     role:'product', tag:'หมวดสินค้า',
     budget:25, sku:3, startMonth:3, duration:8, color:'#60a5fa',
-    split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 }
+    split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 },
+    detail:{
+      objective:'ยกระดับหัตถกรรมและผ้าทอจากกองทุน (ไหม / ฝ้าย / หวาย / เซรามิก) เป็น Lifestyle Brand ร่วมสมัย ตลาดคนรุ่นใหม่ + Export',
+      keyActivities:[
+        'Design Collab กับ OTOP Designer / Fashion School',
+        'Modern Colorway & Silhouette — capsule collection',
+        'Retail packaging + Hang tag Story',
+        'Pop-up Flagship ICONSIAM / Central Embassy',
+        'Lookbook + Photoshoot'
+      ],
+      partners:[
+        'กรมส่งเสริมอุตสาหกรรม',
+        'SACIT (สถาบันหัตถกรรมร่วมสมัย)',
+        'Fashion designer network',
+        'มูลนิธิส่งเสริมศิลปาชีพฯ',
+        'Pop-up retailer: ICONCRAFT, Central The 1'
+      ],
+      targetAreas:['บุรีรัมย์','สกลนคร','สุรินทร์','น่าน','ลำพูน'],
+      skuList:[
+        'ผ้าไหม Capsule Collection 3 สี',
+        'กระเป๋าฝ้าย / หวายงานทอชุมชน',
+        'Ceramic Homeware VF'
+      ],
+      deliverables:[
+        '3 SKU + Lookbook + E-catalog',
+        'Collab designer 2 ท่าน',
+        'Flagship Pop-up 2 สาขา',
+        'Export prep Japan / Singapore'
+      ],
+      kpis:[
+        'ยอดขาย 18 ลบ.',
+        'Listing lifestyle store 3 เครือ',
+        'Export order Japan/Singapore 2 ราย',
+        'Social media reach 3M impressions'
+      ]
+    }
   },
   {
     id:7, name:'ข้าวพรีเมียมและผลิตภัณฑ์มูลค่าเพิ่มจากข้าว',
     role:'product', tag:'หมวดสินค้า',
     budget:21, sku:3, startMonth:3, duration:7, color:'#1d4ed8',
-    split:{ dev:9, mkt:6.7, plat:1.1, sales:4.2 }
+    split:{ dev:9, mkt:6.7, plat:1.1, sales:4.2 },
+    detail:{
+      objective:'ยกระดับข้าวหอมมะลิ / ข้าว GI / ข้าวอินทรีย์จากกองทุนนาข้าวเป็นแบรนด์ VF พรีเมียม + สินค้าเพิ่มมูลค่า (granola, ข้าวฮางงอก)',
+      keyActivities:[
+        'ขึ้นทะเบียน GAP / Organic / GI',
+        'ออกแบบ Packaging Export-grade (ถุงสุญญากาศ 1kg/5kg)',
+        'พัฒนาสินค้าเพิ่มมูลค่า: ข้าวฮางงอก, granola',
+        'Bulk export negotiation',
+        'Tasting event ใน Modern Trade'
+      ],
+      partners:[
+        'กรมการข้าว',
+        'กรมพัฒนาที่ดิน',
+        'สหกรณ์ชาวนา 10 แห่ง',
+        'ม.เกษตรศาสตร์',
+        'GI-TISTR'
+      ],
+      targetAreas:['สุรินทร์','ยโสธร','ร้อยเอ็ด','ศรีสะเกษ','บุรีรัมย์'],
+      skuList:[
+        'ข้าวหอมมะลิ GI Tung Kula Ronghai 1kg/5kg',
+        'ข้าวฮางงอก ready-to-cook pouch',
+        'Rice Granola / Rice snack VF'
+      ],
+      deliverables:[
+        '3 SKU GI + Organic cert',
+        'Packaging Export standard',
+        'Bulk Export contract 1 ราย',
+        'Listing Modern Trade 3 เครือ'
+      ],
+      kpis:[
+        'Export ผ่าน Gulfood / SIAL',
+        'ยอดขาย 22 ลบ.',
+        'Farmer network 2,000+ ครัวเรือน',
+        'GI cert 1 ชนิด + Organic 2 ชนิด'
+      ]
+    }
   },
   {
     id:8, name:'ขนมไทยและเบเกอรี่สมัยใหม่ร่วมสมัย',
     role:'product', tag:'หมวดสินค้า',
     budget:21, sku:2, startMonth:4, duration:6, color:'#93c5fd',
-    split:{ dev:9, mkt:6.7, plat:1.1, sales:4.2 }
+    split:{ dev:9, mkt:6.7, plat:1.1, sales:4.2 },
+    detail:{
+      objective:'ยกระดับขนมไทย / เบเกอรี่จากชุมชนเป็นสินค้า Ready-to-pick สำหรับ Modern Trade + Café + CVS',
+      keyActivities:[
+        'R&D Shelf-life extension (MAP / retort)',
+        'ขึ้นทะเบียน HACCP + อย.',
+        'Cafe Collab — Café Amazon / Starbucks',
+        'Packaging งามพร้อมเข้าห้าง + Gift Box ฤดูกาล',
+        'ทดสอบตลาด CVS'
+      ],
+      partners:[
+        'ม.สวนดุสิต (Culinary Arts)',
+        'Café Amazon (ขอความร่วมมือ pilot)',
+        '7-Eleven Private Label (ขอความร่วมมือ)',
+        'กองทุนขนม-เบเกอรี่ชุมชน'
+      ],
+      targetAreas:['เพชรบุรี','นครปฐม','สมุทรสงคราม','ราชบุรี','กรุงเทพฯ'],
+      skuList:[
+        'ขนมไทยพรีเมียม Gift Box (ทองหยิบ-ฝอยทอง)',
+        'Cookie / Brownie ผสมวัตถุดิบไทย (มะพร้าว / ทุเรียน)'
+      ],
+      deliverables:[
+        '2 SKU HACCP + อย.',
+        '7-Eleven Pilot Listing 500 สาขา',
+        'Café Amazon Pilot 50 สาขา',
+        'Gift Box Limited Edition 2 ฤดู'
+      ],
+      kpis:[
+        '7-Eleven + Café Amazon Listing',
+        'ยอดขาย 18 ลบ.',
+        'Shelf-life 90+ วัน',
+        'Reorder rate 60%+'
+      ]
+    }
   },
   {
     id:9, name:'เครือข่ายร้านค้ากองทุน VF Smart Store × ธงฟ้า',
     role:'product', tag:'หมวดสินค้า',
     budget:25, sku:0, startMonth:2, duration:9, color:'#b91c1c',
-    split:{ dev:2, mkt:8.3, plat:4.8, sales:9.9 }
+    split:{ dev:2, mkt:8.3, plat:4.8, sales:9.9 },
+    detail:{
+      objective:'ยกระดับร้านค้ากองทุนเป็น "VF Smart Store" — ซื้อสินค้าธงฟ้าจากกระทรวงพาณิชย์มาขายในชุมชน + ขายสินค้า VF พร้อมกัน (ตอบโจทย์รัฐบาล #1)',
+      keyActivities:[
+        'คัดเลือก Pilot Store 200 ร้านจากทุกภาค',
+        'ระบบ POS + Stock management เชื่อมทั้งเครือข่าย',
+        'ติดตั้งป้าย "VF Smart Store" + Interior standard',
+        'จัดการ Procurement สินค้าธงฟ้าแบบรวม Lot',
+        'Re-stock สินค้า VF จากโครงการอื่นๆ',
+        'Training เจ้าของร้าน + คู่มือมาตรฐาน'
+      ],
+      partners:[
+        'กระทรวงพาณิชย์ (ขอความร่วมมือ โครงการธงฟ้า)',
+        'กรมการค้าภายใน',
+        'กองทุนระดับจังหวัด 20 จังหวัด',
+        'Distributor สินค้าธงฟ้า'
+      ],
+      targetAreas:['200 ร้าน','20 จังหวัด','4 ภาค (เหนือ/อีสาน/กลาง/ใต้)'],
+      skuList:['— (โครงการนี้เป็นช่องทาง ไม่ใช่สินค้าใหม่ แต่เป็นร้านกระจายสินค้า VF + ธงฟ้า)'],
+      deliverables:[
+        '200 VF Smart Store + ป้ายมาตรฐาน',
+        'ระบบ POS + Stock เชื่อมกลาง',
+        'คู่มือมาตรฐานร้าน + Training material',
+        'สัญญาซื้อสินค้าธงฟ้าแบบรวม Lot',
+        'Dashboard ติดตามยอดขายทั้งเครือข่าย'
+      ],
+      kpis:[
+        '200 Smart Store Active 100%',
+        'ยอดซื้อสินค้าธงฟ้า 100+ ลบ.',
+        'ยอดขายสินค้า VF ผ่านร้าน 80+ ลบ.',
+        'Footfall เฉลี่ย 150 คน/ร้าน/วัน',
+        'คะแนนความพึงพอใจชุมชน 4.5/5'
+      ]
+    }
   },
   {
     id:10, name:'ผลิตปุ๋ยอินทรีย์ชุมชน VF Green',
     role:'product', tag:'หมวดสินค้า',
     budget:17, sku:3, startMonth:3, duration:8, color:'#7f1d1d',
-    split:{ dev:9, mkt:3.85, plat:0.9, sales:3.25 }
+    split:{ dev:9, mkt:3.85, plat:0.9, sales:3.25 },
+    detail:{
+      objective:'ให้กองทุนหมู่บ้านผลิตปุ๋ยอินทรีย์มาตรฐานขายในพื้นที่ ลดต้นทุนเกษตรกร + ลดการใช้สารเคมี (ตอบโจทย์รัฐบาล #2)',
+      keyActivities:[
+        'สำรวจกองทุนที่มีศักยภาพผลิตปุ๋ย 30 แห่ง',
+        'ถ่ายทอดสูตรและเทคโนโลยีมาตรฐาน',
+        'ขึ้นทะเบียนปุ๋ยอินทรีย์ (มกอช.)',
+        'พัฒนา Packaging + Brand VF Green',
+        'วางระบบขายในพื้นที่ผ่านกองทุนและร้านเกษตร',
+        'Training เกษตรกรใช้งานถูกวิธี'
+      ],
+      partners:[
+        'กรมพัฒนาที่ดิน',
+        'กรมวิชาการเกษตร',
+        'มกอช. (สำนักงานมาตรฐานเกษตรอินทรีย์)',
+        'สภาเกษตรกรแห่งชาติ',
+        'กองทุนชุมชนผลิตปุ๋ย 30 แห่ง'
+      ],
+      targetAreas:['30 ศูนย์ผลิต','10 จังหวัด','ภาคกลาง + อีสาน + เหนือ'],
+      skuList:[
+        'ปุ๋ยอินทรีย์อัดเม็ด VF Green (25 kg)',
+        'ปุ๋ยน้ำหมักชีวภาพ VF Green (20 L)',
+        'ปุ๋ยสูตรเฉพาะสำหรับข้าว / ผลไม้'
+      ],
+      deliverables:[
+        '3 SKU ทะเบียนปุ๋ยถูกต้อง',
+        '30 ศูนย์ผลิตมาตรฐาน',
+        'คู่มือมาตรฐานการผลิต',
+        'Distribution network ในพื้นที่ 10 จังหวัด'
+      ],
+      kpis:[
+        '3 SKU ขึ้นทะเบียนปุ๋ย',
+        'ปริมาณขาย 5,000+ ตัน/ปี',
+        'เกษตรกรใช้งาน 15,000+ ราย',
+        'ลดต้นทุนเกษตรกร 20%',
+        'รายได้เข้าชุมชน 15+ ลบ./ปี'
+      ]
+    }
   },
 ];
 
@@ -1052,25 +1535,122 @@ booths.forEach(b=>{
     </tr>`);
 });
 
-/* PROJECT TABLE */
+/* PROJECT TABLE — CLICKABLE */
 const tbody = document.getElementById('projectTbody');
 projects.forEach((p)=>{
   const tagClass = p.role==='main'?'tag-main':'tag-product';
   const numClass = p.role==='main'?'main':'';
-  const rowClass = p.role==='main'?'main-row':'';
+  const rowClass = p.role==='main'?'proj-row main-row':'proj-row';
   const skuClass = p.sku===0? 'zero' : (p.role==='main'? 'main':'');
   const skuDisplay = p.sku===0? '—' : (p.skuDetail? `${p.sku} <small style="opacity:.7;display:block;font-size:10px;font-weight:400;">(${p.skuDetail})</small>` : p.sku);
   tbody.insertAdjacentHTML('beforeend',`
-    <tr class="${rowClass}">
+    <tr class="${rowClass}" onclick="openProjectModal(${p.id})">
       <td><span class="proj-num ${numClass}">${p.id}</span></td>
       <td>
-        <div class="proj-name">${p.name}</div>
+        <div class="proj-name">${p.name}<span class="click-hint">คลิกดูรายละเอียด ▸</span></div>
         <span class="proj-tag ${tagClass}">${p.tag}</span>
       </td>
       <td style="text-align:right;" class="budget-cell">${p.budget}</td>
       <td style="text-align:center;"><span class="skucount ${skuClass}">${skuDisplay}</span></td>
       <td style="text-align:center;color:var(--gray-500);">${p.duration} เดือน</td>
     </tr>`);
+});
+// Table hint
+tbody.insertAdjacentHTML('afterend',`
+  <tfoot><tr><td colspan="5" class="table-hint">💡 <strong>คลิกที่แถวใดก็ได้</strong> เพื่อดูรายละเอียดโครงการ — วัตถุประสงค์ / กิจกรรมหลัก / พาร์ทเนอร์ / พื้นที่ / SKU / Deliverables / KPIs</td></tr></tfoot>`);
+
+/* MODAL RENDER */
+function openProjectModal(id){
+  const p = projects.find(x=>x.id===id);
+  if(!p) return;
+  const d = p.detail;
+  const isMain = p.role==='main';
+  const headerCls = isMain? 'main':'';
+  const bodyCls = isMain? 'modal-content-main':'';
+  const skuText = p.sku===0 ? '— (ช่องทางจัดจำหน่าย)' : (p.skuDetail? `${p.sku} SKU (${p.skuDetail})` : `${p.sku} SKU`);
+
+  const activitiesHTML = d.keyActivities.map(a=>`<li>${a}</li>`).join('');
+  const partnersHTML = d.partners.map(a=>`<span class="modal-tag-pill">${a}</span>`).join('');
+  const areasHTML = d.targetAreas.map(a=>`<span class="modal-tag-pill">${a}</span>`).join('');
+  const skuListHTML = d.skuList.map(a=>`<li>${a}</li>`).join('');
+  const deliverablesHTML = d.deliverables.map(a=>`<li>${a}</li>`).join('');
+  const kpisHTML = d.kpis.map(a=>`<div class="kpi-card-mini">${a}</div>`).join('');
+
+  const budgetHTML = `
+    <div class="modal-budget-grid">
+      <div class="budget-cell-card dev"><div class="bc-label">Dev</div><div class="bc-val">${p.split.dev}</div><div class="bc-unit">ลบ.</div></div>
+      <div class="budget-cell-card mkt"><div class="bc-label">Marketing</div><div class="bc-val">${p.split.mkt}</div><div class="bc-unit">ลบ.</div></div>
+      <div class="budget-cell-card plat"><div class="bc-label">Platform</div><div class="bc-val">${p.split.plat}</div><div class="bc-unit">ลบ.</div></div>
+      <div class="budget-cell-card sales"><div class="bc-label">Sales</div><div class="bc-val">${p.split.sales}</div><div class="bc-unit">ลบ.</div></div>
+    </div>`;
+
+  const html = `
+    <div class="${bodyCls}">
+      <div class="modal-header ${headerCls}">
+        <button class="modal-close" onclick="closeProjectModal()" aria-label="Close">✕</button>
+        <span class="modal-tag">${p.tag} &middot; โครงการที่ ${p.id}</span>
+        <div class="modal-title">${p.name}</div>
+        <div class="modal-meta">
+          <div class="modal-meta-item">💰 งบประมาณ <strong>${p.budget} ลบ.</strong></div>
+          <div class="modal-meta-item">📦 สินค้าเข้า VF <strong>${skuText}</strong></div>
+          <div class="modal-meta-item">⏱ ระยะเวลา <strong>${p.duration} เดือน</strong> (เดือน ${p.startMonth}–${p.startMonth + p.duration - 1})</div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section ${isMain?'main-theme':''}">
+          <div class="modal-section-title">🎯 วัตถุประสงค์ของโครงการ</div>
+          <div class="modal-objective">${d.objective}</div>
+        </div>
+
+        <div class="modal-section ${isMain?'main-theme':''}">
+          <div class="modal-section-title">⚙️ กิจกรรมหลัก (Key Activities)</div>
+          <ul class="modal-list">${activitiesHTML}</ul>
+        </div>
+
+        <div class="modal-grid-2">
+          <div class="modal-section ${isMain?'main-theme':''}">
+            <div class="modal-section-title">🤝 พาร์ทเนอร์ / หน่วยงาน</div>
+            <div class="modal-tag-list">${partnersHTML}</div>
+          </div>
+          <div class="modal-section ${isMain?'main-theme':''}">
+            <div class="modal-section-title">📍 พื้นที่เป้าหมาย</div>
+            <div class="modal-tag-list">${areasHTML}</div>
+          </div>
+        </div>
+
+        <div class="modal-section ${isMain?'main-theme':''}">
+          <div class="modal-section-title">🏷 รายการสินค้า (SKU List)</div>
+          <ul class="modal-list">${skuListHTML}</ul>
+        </div>
+
+        <div class="modal-section ${isMain?'main-theme':''}">
+          <div class="modal-section-title">📦 Deliverables (ผลผลิตที่ส่งมอบ)</div>
+          <ul class="modal-list">${deliverablesHTML}</ul>
+        </div>
+
+        <div class="modal-section ${isMain?'main-theme':''}">
+          <div class="modal-section-title">📊 KPIs / ตัวชี้วัดความสำเร็จ</div>
+          <div class="kpi-grid">${kpisHTML}</div>
+        </div>
+
+        <div class="modal-section ${isMain?'main-theme':''}">
+          <div class="modal-section-title">💰 การกระจายงบประมาณ (รวม ${p.budget} ลบ.)</div>
+          ${budgetHTML}
+        </div>
+      </div>
+    </div>`;
+
+  document.getElementById('modalContent').innerHTML = html;
+  document.getElementById('projectModal').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function closeProjectModal(){
+  document.getElementById('projectModal').classList.remove('active');
+  document.body.style.overflow='';
+}
+// ESC to close
+document.addEventListener('keydown',(e)=>{
+  if(e.key==='Escape') closeProjectModal();
 });
 
 /* GANTT */
