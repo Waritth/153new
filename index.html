@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>VF Brand Development Portfolio — Year 2 Dashboard</title>
+<title>VF Brand Development Portfolio — Dashboard</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
@@ -595,8 +595,6 @@
   .budget-cell-card.mkt{border-top:3px solid #1e40af;}
   .budget-cell-card.plat{border-top:3px solid #60a5fa;}
   .budget-cell-card.sales{border-top:3px solid #ef4444;}
-  .budget-cell-card.buffer{border-top:3px solid #64748b;background:#f8fafc;}
-  .budget-cell-card.buffer .bc-val{color:#334155;}
   .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;}
   .kpi-card-mini{
     background:linear-gradient(135deg,var(--blue-50) 0%,var(--white) 100%);
@@ -617,36 +615,35 @@
   <!-- HERO -->
   <div class="hero">
     <div class="eyebrow">VF Brand Development Portfolio</div>
-    <h1>โครงการพัฒนาแบรนด์ <span class="accent">VF</span> กองทุนหมู่บ้าน ปีที่ 2</h1>
-    <p class="subtitle">Dashboard ภาพรวม — 11 โครงการภายใต้แบรนด์แม่ VF เน้นขยายการขายในประเทศ ส่งออก ตอบโจทย์รัฐบาล 2 เรื่อง และบ่มเพาะเลือดใหม่ให้กองทุน งบรวม 579 ลบ. (งบทำงาน 482 ลบ. + เงินสำรอง 97 ลบ.) ดำเนินงานภายใน 10 เดือน สินค้ารวม 113 SKU + ผู้ประกอบการใหม่ 1,000+ คน</p>
-    <div class="parent-tag">★ ต่อเนื่องจากโครงการ 153 ปีที่ 1 ★</div>
+    <h1>โครงการพัฒนาแบรนด์ <span class="accent">VF</span> กองทุนหมู่บ้านและชุมชนเมือง</h1>
+    <p class="subtitle">Dashboard ภาพรวม — 7 โครงการภายใต้แบรนด์แม่ VF ครอบคลุมสินค้า นโยบายรัฐบาล (ปุ๋ยชุมชน) ของที่ระลึกไทยโมเดิร์น และธนาคารภูมิปัญญา งบรวม 521 ลบ. ดำเนินงานภายใน 10 เดือน สินค้ารวม 156 SKU + 500+ ภูมิปัญญาคุ้มครอง</p>
   </div>
 
   <!-- KEY STATS -->
   <div class="stats-row">
     <div class="stat-card">
       <div class="stat-label">งบประมาณรวม</div>
-      <div class="stat-value">579</div>
+      <div class="stat-value">521</div>
       <div class="stat-unit">ล้านบาท</div>
-      <div class="stat-sub">Year 2 — 11 โครงการ (รวม Buffer ~20%)</div>
+      <div class="stat-sub">7 โครงการในพอร์ตโฟลิโอ (บูรณาการเพื่อ synergy)</div>
     </div>
     <div class="stat-card red">
       <div class="stat-label">สินค้าเข้าแบรนด์ VF</div>
-      <div class="stat-value">113</div>
+      <div class="stat-value">156</div>
       <div class="stat-unit">SKU</div>
-      <div class="stat-sub">80 จากหลัก (20 รอด+60 ใหม่) + 33 จากเสริม</div>
-    </div>
-    <div class="stat-card blue-dark">
-      <div class="stat-label">ผู้ประกอบการรุ่นใหม่</div>
-      <div class="stat-value">1,000<span style="font-size:22px;color:var(--gray-400);">+</span></div>
-      <div class="stat-unit">คน ผ่าน VF Academy</div>
-      <div class="stat-sub">เลือดใหม่ให้กองทุน + 20 Seed Ideas</div>
+      <div class="stat-sub">86 จากหลัก (20 Hero+66 ใหม่) + 70 จากโครงการย่อย</div>
     </div>
     <div class="stat-card">
       <div class="stat-label">สัดส่วนช่องทางขาย</div>
       <div class="stat-value">60<span style="font-size:22px;color:var(--gray-400);">/</span>20<span style="font-size:22px;color:var(--gray-400);">/</span>20</div>
       <div class="stat-unit">Domestic / Export / Direct</div>
-      <div class="stat-sub">5 ช่องทางครอบคลุม ขายได้จริง</div>
+      <div class="stat-sub">4 ช่องทางครอบคลุม ขายได้จริง</div>
+    </div>
+    <div class="stat-card blue-dark">
+      <div class="stat-label">ภูมิปัญญาคุ้มครอง</div>
+      <div class="stat-value">500<span style="font-size:22px;color:var(--gray-400);">+</span></div>
+      <div class="stat-unit">รายการ ผ่าน Wisdom Bank</div>
+      <div class="stat-sub">Copyright + GI + Trade Secret + Blockchain</div>
     </div>
     <div class="stat-card red-light">
       <div class="stat-label">ระยะเวลาดำเนินงาน</div>
@@ -661,13 +658,13 @@
     <div class="section-title">
       ช่องทางการขายของสินค้า VF <span class="kicker">HOW WE ACTUALLY SELL</span>
     </div>
-    <div class="section-subtitle">สินค้า 113 SKU ภายใต้แบรนด์ VF จะถูกขายผ่าน 5 ช่องทางที่แบ่งความรับผิดชอบชัดเจน ไม่มีช่องทางไหนลอยเดี่ยวเป็นโครงการ แต่ฝังอยู่ในโครงการสินค้าและโครงการหลัก</div>
+    <div class="section-subtitle">สินค้า 156 SKU ภายใต้แบรนด์ VF จะถูกขายผ่าน 5 ช่องทางที่แบ่งความรับผิดชอบชัดเจน ไม่มีช่องทางไหนลอยเดี่ยวเป็นโครงการ แต่ฝังอยู่ในโครงการสินค้าและโครงการหลัก</div>
 
     <div class="channel-hero">
       <div class="channel-hero-inner">
-        <h3>ขายได้จริง ด้วย 5 ช่องทาง Omni-channel</h3>
+        <h3>ขายได้จริง ด้วย 4 ช่องทาง Omni-channel</h3>
         <p>ทุกสินค้าจาก VF มีเส้นทางขายที่กำหนดล่วงหน้า — ไม่ใช่แค่พัฒนาแล้วรอให้ขายเอง แต่มีทีม มีพาร์ทเนอร์ และมีงบ Activate แต่ละช่องทางในโครงการหลัก</p>
-        <div class="big-num">113 <small>SKU × 5 ช่องทาง</small></div>
+        <div class="big-num">156 <small>SKU × 4 ช่องทาง</small></div>
       </div>
     </div>
 
@@ -691,7 +688,7 @@
           <span class="partner-chip">Foodland</span>
         </div>
         <div class="channel-handler">
-          <strong>รับผิดชอบ:</strong> ทีม Trade Marketing ในโครงการหลัก + งบ Listing Fee ฝังในโครงการสินค้า #2-#8
+          <strong>รับผิดชอบ:</strong> ทีม Trade Marketing ในโครงการหลัก + งบ Listing Fee ฝังในโครงการสินค้า #2-#5
         </div>
       </div>
 
@@ -711,24 +708,6 @@
         </div>
         <div class="channel-handler">
           <strong>รับผิดชอบ:</strong> ทีม Digital Commerce ในโครงการหลัก (ไม่เป็นโครงการเดี่ยว — อยู่ใต้ร่มพัฒนาแบรนด์ VF)
-        </div>
-      </div>
-
-      <!-- Channel 3: VF Smart Store -->
-      <div class="channel-card smart">
-        <span class="channel-pct">10<small>%</small></span>
-        <div class="channel-icon">🏬</div>
-        <div class="channel-title">VF Smart Store × ธงฟ้า</div>
-        <div class="channel-sub">ร้านค้ากองทุน &middot; 500-1,000 สาขา</div>
-        <div class="channel-desc">เครือข่ายร้านค้ากองทุนหมู่บ้านทั่วประเทศ ขายสินค้าธงฟ้า (ตามนโยบายรัฐ) + สินค้า VF Brand — เป็นกระดูกสันหลังช่องทาง Domestic ในพื้นที่ชนบท</div>
-        <div class="channel-partners">
-          <span class="partner-chip blue">กระทรวงพาณิชย์</span>
-          <span class="partner-chip red">ธงฟ้า</span>
-          <span class="partner-chip">ร้านกองทุน 500-1,000</span>
-          <span class="partner-chip">POS กลาง</span>
-        </div>
-        <div class="channel-handler">
-          <strong>รับผิดชอบ:</strong> โครงการ #9 VF Smart Store × ธงฟ้า (48 ลบ., 9 เดือน)
         </div>
       </div>
 
@@ -755,7 +734,7 @@
         <span class="channel-pct">20<small>%</small></span>
         <div class="channel-icon">✈️</div>
         <div class="channel-title">Export via DITP</div>
-        <div class="channel-sub">บูธต่างประเทศ 5 งาน &middot; 70 ลบ.</div>
+        <div class="channel-sub">บูธต่างประเทศ 5 งาน</div>
         <div class="channel-desc">ขอความร่วมมือกระทรวงพาณิชย์ (DITP) ใช้ Thailand Pavilion ในงานแสดงสินค้านานาชาติ 5 งาน + 58 Thai Trade Centers 43 ประเทศ + Business Matching หาผู้นำเข้าในตลาดเป้าหมาย</div>
         <div class="channel-partners">
           <span class="partner-chip blue">🇹🇭 THAIFEX</span>
@@ -765,7 +744,7 @@
           <span class="partner-chip">🇺🇸 Natural Products Expo</span>
         </div>
         <div class="channel-handler">
-          <strong>รับผิดชอบ:</strong> ทีม Export ในโครงการหลัก (70 ลบ. อุดหนุน 50-75% จาก DITP)
+          <strong>รับผิดชอบ:</strong> ทีม Export ในโครงการหลัก (อุดหนุนค่าบูธ 50-75% จาก DITP)
         </div>
       </div>
 
@@ -788,7 +767,7 @@
       </div>
       <div class="chart-card">
         <div class="chart-title">งบประมาณตามหมวดการใช้จ่าย</div>
-        <div class="chart-sub">งบรวม 579 ลบ. แบ่งเป็น 5 หมวด (รวม Buffer 20%)</div>
+        <div class="chart-sub">งบรวม 521 ลบ. แบ่งเป็น 4 หมวด</div>
         <div class="chart-container">
           <canvas id="pieCategory"></canvas>
         </div>
@@ -796,7 +775,7 @@
       </div>
       <div class="chart-card">
         <div class="chart-title">งบประมาณตามโครงการ</div>
-        <div class="chart-sub">11 โครงการในพอร์ตโฟลิโอ</div>
+        <div class="chart-sub">7 โครงการในพอร์ตโฟลิโอ</div>
         <div class="chart-container">
           <canvas id="pieProject"></canvas>
         </div>
@@ -858,20 +837,13 @@
             <th>งาน / สถานที่</th>
             <th style="width:130px;">ช่วงเวลา</th>
             <th>สินค้าเป้าหมาย</th>
-            <th style="width:100px;text-align:right;">งบ</th>
           </tr>
         </thead>
         <tbody id="boothTbody"></tbody>
-        <tfoot>
-          <tr style="background:var(--red-50);">
-            <td colspan="4" style="font-weight:800;color:var(--blue-dark);font-size:14px;">รวมงบประมาณออกบูธต่างประเทศ</td>
-            <td style="text-align:right;font-weight:800;color:var(--red);font-size:16px;">70 ลบ.</td>
-          </tr>
-        </tfoot>
       </table>
     </div>
     <div class="info-note">
-      <strong>หมายเหตุ:</strong> งบออกบูธรวม <span class="red">70 ลบ.</span> อยู่ใน <strong>โครงการหลัก (#1)</strong> หมวด Export Team — ได้ส่วนลด DITP 50-75% ครอบคลุม 5 งานเรือธง รองรับตลาด ASEAN / ตะวันออกกลาง / ญี่ปุ่น / จีน / สหรัฐฯ
+      <strong>หมายเหตุ:</strong> การออกบูธต่างประเทศอยู่ใน <strong>โครงการหลัก (#1)</strong> หมวด Export Team — ได้ส่วนลด DITP 50-75% ครอบคลุม 5 งานเรือธง รองรับตลาด ASEAN / ตะวันออกกลาง / ญี่ปุ่น / จีน / สหรัฐฯ
     </div>
   </div>
 
@@ -882,23 +854,13 @@
     </div>
     <div class="gov-grid">
       <div class="gov-card">
-        <span class="gov-badge">โจทย์ 1.1</span>
-        <div class="gov-title">VF Smart Store × ธงฟ้า</div>
-        <p class="gov-desc">ร้านค้ากองทุนรับสินค้าธงฟ้าจากกระทรวงพาณิชย์มาจำหน่ายในชุมชน พร้อมขายสินค้า VF Brand ที่กองทุนผลิตเอง — ปิดวงจรจากต้นน้ำถึงปลายน้ำ</p>
-        <div class="gov-meta">
-          <span><strong>งบ:</strong>48 ลบ.</span>
-          <span><strong>ระยะเวลา:</strong>9 เดือน</span>
-          <span><strong>สาขานำร่อง:</strong>200 ร้าน (เต็มรูปแบบ)</span>
-        </div>
-      </div>
-      <div class="gov-card">
-        <span class="gov-badge">โจทย์ 1.2</span>
+        <span class="gov-badge">โจทย์หลัก</span>
         <div class="gov-title">VF Green Fertilizer — ปุ๋ยชุมชน</div>
-        <p class="gov-desc">ผลิตปุ๋ยอินทรีย์จากวัตถุดิบในพื้นที่ (มูลสัตว์/เศษชีวมวล/ตะกอนชา-กาแฟจากโครงการ #4) จำหน่ายผ่านร้านกองทุน ใช้ในโครงการเกษตร VF เอง (ผลไม้ #3 / ชา #4 / ข้าว #7)</p>
+        <p class="gov-desc">ผลิตปุ๋ยอินทรีย์จากวัตถุดิบในพื้นที่ (มูลสัตว์/เศษชีวมวล/ตะกอนชา-กาแฟจากโครงการ #4) จำหน่ายผ่านร้านกองทุน ใช้ในโครงการเกษตร VF เอง (ผลไม้และข้าว #3 / ชา-กาแฟ #4)</p>
         <div class="gov-meta">
-          <span><strong>งบ:</strong>36 ลบ.</span>
+          <span><strong>งบ:</strong>65 ลบ.</span>
           <span><strong>ระยะเวลา:</strong>8 เดือน</span>
-          <span><strong>ศูนย์ผลิตนำร่อง:</strong>30 แห่ง</span>
+          <span><strong>ศูนย์ผลิต:</strong>50 แห่ง</span>
         </div>
       </div>
     </div>
@@ -952,7 +914,7 @@
       <div class="constraint-card">
         <div class="constraint-icon">◆</div>
         <div class="constraint-title">โครงการหลัก = เครื่องยนต์หลัก</div>
-        <div class="constraint-text">โครงการหลัก 228 ลบ. (งบทำงาน 190 + Buffer 38) ดูแลแบรนด์ + 80 SKU + ทีม Export / TikTok / Event / Trade / PMO ทั้งหมดฝังในนี้</div>
+        <div class="constraint-text">โครงการหลัก 180 ลบ. ดูแลแบรนด์ + 85 SKU + ทีม Export / TikTok / Event / Trade / PMO ฝังในนี้</div>
       </div>
       <div class="constraint-card">
         <div class="constraint-icon">◆</div>
@@ -961,30 +923,35 @@
       </div>
       <div class="constraint-card">
         <div class="constraint-icon">◆</div>
-        <div class="constraint-title">ตอบรัฐ 2 เรื่อง</div>
-        <div class="constraint-text">ร้านกองทุน×ธงฟ้า (48 ลบ. / 200 ร้านเต็มรูปแบบ) + ปุ๋ยชุมชน (36 ลบ. / 30 ศูนย์) — ตรงตามนโยบายรัฐบาลและใช้งบเพียงพอจริง</div>
+        <div class="constraint-title">ตอบนโยบายรัฐบาล</div>
+        <div class="constraint-text">VF Green ปุ๋ยชุมชน (65 ลบ. / 50 ศูนย์ผลิต / 15 จังหวัด) — ลดต้นทุนเกษตรกร ลดการใช้สารเคมี เพิ่มรายได้ชุมชน ตรงตามนโยบายเกษตรอินทรีย์ของรัฐบาล</div>
       </div>
       <div class="constraint-card">
         <div class="constraint-icon">◆</div>
         <div class="constraint-title">ขอความร่วมมือกระทรวงพาณิชย์</div>
-        <div class="constraint-text">ใช้กลไก DITP เต็มรูปแบบ — อุดหนุนค่าบูธ 50-75% ทำให้ออก 5 งานใหญ่ในวงเงิน 70 ลบ.</div>
+        <div class="constraint-text">ใช้กลไก DITP เต็มรูปแบบ — อุดหนุนค่าบูธ 50-75% ทำให้ออก 5 งานใหญ่ (THAIFEX / Gulfood / Foodex / SIAL Shanghai / Natural Products Expo) ได้ในงบที่คุ้มค่า</div>
       </div>
       <div class="constraint-card">
         <div class="constraint-icon">◆</div>
-        <div class="constraint-title">บ่มเพาะเลือดใหม่ให้กองทุน</div>
-        <div class="constraint-text">VF Entrepreneur Academy (42 ลบ.) สร้างผู้ประกอบการรุ่นใหม่ 1,000+ คน — แก้ปัญหา Succession + ป้อนไอเดียสินค้าใหม่สำหรับปี 3 ผ่าน Seed Fund 20 ทีม</div>
+        <div class="constraint-title">Lifestyle + ของไทยโมเดิร์น</div>
+        <div class="constraint-text">รวมสุขภาพ/หัตถกรรม/ของที่ระลึกไว้ในโครงการเดียว (VF05, 91 ลบ., 27 SKU) — พระเรซินโมเดิร์น / Mascot Art Toy / สมุนไพร อย./GMP / ผ้าไหม+เซรามิก — Pop-up Flagship, Launch Event, Export lead ใช้ทรัพยากรร่วม ขายได้ premium margin 40%+ เจาะตลาดคนไทยรุ่นใหม่และต่างชาติ</div>
       </div>
       <div class="constraint-card">
         <div class="constraint-icon">◆</div>
-        <div class="constraint-title">Buffer ~20% ทุกโครงการ</div>
-        <div class="constraint-text">ทุกโครงการมีเงินสำรอง ~20% ของงบทำงาน (รวม 97 ลบ.) เผื่อความผันผวนราคาวัสดุ/Logistics, งาน Event ที่ต้องเพิ่ม, FX Export และโอกาสใหม่ระหว่างดำเนินโครงการ — เบิกใช้ได้ตามการอนุมัติของ Steering Committee</div>
+        <div class="constraint-title">ภูมิปัญญา = ทรัพย์สินกองทุน</div>
+        <div class="constraint-text">VF Wisdom Bank (20 ลบ.) — ใช้ Copyright + GI + Trade Secret + Blockchain Timestamp แทนสิทธิบัตรที่ชาวบ้านเข้าไม่ถึง บันทึกและคุ้มครองภูมิปัญญา 500+ รายการให้เป็น "ทรัพย์สินกองทุน" ที่ส่งต่อรุ่นต่อรุ่น + Revenue Sharing กับเจ้าของความรู้ + Licensing Desk ให้ brand ภายนอกขอใช้</div>
+      </div>
+      <div class="constraint-card">
+        <div class="constraint-icon">◆</div>
+        <div class="constraint-title">Synergy ระหว่างโครงการ</div>
+        <div class="constraint-text">ยุบโครงการย่อยที่ใกล้เคียงเข้าด้วยกัน (อาหารทะเล+เครื่องปรุง / ผลไม้+ข้าว / สุขภาพ+หัตถกรรม+ของที่ระลึก) + ตัดโครงการที่ไม่จำเป็น (Smart Store/Academy) — ใช้ทรัพยากรกลางร่วม, ลดงบรวม 142 ลบ. โดยคงขอบเขตสินค้าหลัก</div>
       </div>
     </div>
   </div>
 
   <div class="footer">
-    <strong>VF Brand Development Portfolio — Year 2</strong><br>
-    11 Projects &middot; 579 MB (Working 482 + Buffer 97) &middot; 113 SKUs + 1,000 Entrepreneurs &middot; 10 Months &middot; Domestic 60% / Export 20% / Direct 20%<br>
+    <strong>VF Brand Development Portfolio</strong><br>
+    7 Projects &middot; 521 MB &middot; 156 SKUs + 500+ Wisdom Assets &middot; 10 Months &middot; Domestic 60% / Export 20% / Direct 20%<br>
     <span style="color:var(--blue);font-weight:700;">■</span>&nbsp; กองทุนหมู่บ้านและชุมชนเมืองแห่งชาติ &nbsp;<span style="color:var(--red);font-weight:700;">■</span>
   </div>
 
@@ -997,29 +964,29 @@
 
 <script>
 /* =========================
-   DATA — 11 PROJECTS
+   DATA — 7 PROJECTS
    TikTok + Miss Grand absorbed into Main Project as channels
-   Project 11 = VF Entrepreneur Academy (talent/succession)
+   Smart Store & Academy removed; Thai Icons merged into VF05
 ========================= */
 const projects = [
   {
-    id:1, name:'พัฒนาและต่อยอดแบรนด์กองทุนหมู่บ้าน VF ระยะที่ 2',
+    id:1, name:'โครงการพัฒนาแบรนด์ผลิตภัณฑ์และขยายช่องทางการตลาดของกองทุนหมู่บ้านและชุมชนเมือง VF',
     role:'main', tag:'โครงการหลัก',
-    budget:228, buffer:38, sku:80, skuDetail:'20 รอด + 60 ใหม่',
+    budget:180, sku:86, skuDetail:'20 Hero + 66 ใหม่',
     startMonth:1, duration:10, color:'#dc2626',
-    split:{ dev:65, mkt:74, plat:26, sales:25 },
+    split:{ dev:61.2, mkt:69.6, plat:25.2, sales:24 },
     detail:{
-      objective:'ยกระดับแบรนด์ VF เป็น Master Brand ระดับชาติพร้อมส่งออก — ต่อยอดสินค้าปี 1 ที่ผ่านการพิสูจน์ 20 SKU + พัฒนาสินค้าใหม่ 60 SKU ผ่าน 6 หมวดหลัก + วาง Omni-channel 5 ช่องทาง + สร้าง PMO กลางดูแลทั้งพอร์ตโฟลิโอ',
+      objective:'พัฒนาแบรนด์ VF ให้เป็น Master Brand ผลิตภัณฑ์ชุมชนระดับชาติพร้อมส่งออก — บริหารพอร์ตโฟลิโอ 86 SKU (สินค้าต้นแบบ Hero 20 SKU + สินค้าพัฒนาใหม่ 66 SKU) ใน 4 กลุ่มหลัก (หลายตัวใช้ภูมิปัญญาจาก Wisdom Bank #7 = low-cost leverage) + วาง Omni-channel 4 ช่องทาง + สร้าง PMO กลางดูแลทั้งพอร์ตโฟลิโอ',
       keyActivities:[
-        'Brand Refresh: รีเฟรช Brand Guideline v2, ระบบ Packaging มาตรฐานสำหรับ 80 SKU, ฟิล์มโฆษณา Master, Key Visual ปี 2',
-        'SKU Retention: ทบทวนและยกระดับสินค้าปี 1 ที่ผ่านพิสูจน์ตลาด 20 SKU (Hero Products)',
-        'New SKU Development: พัฒนาสินค้าใหม่ 60 SKU ใน 6 หมวด (ทะเล/ผลไม้/ชา-กาแฟ/สมุนไพร/หัตถกรรม/ข้าว-ขนม) ประสานกับโครงการย่อย 2–10',
-        'Omni-Channel Setup: วางระบบ 5 ช่องทาง — Modern Trade / TikTok Shop / VF Smart Store×ธงฟ้า / Event-Roadshow / Export',
+        'Brand Refresh: รีเฟรช Brand Guideline v2, ระบบ Packaging มาตรฐานสำหรับ 86 SKU, ฟิล์มโฆษณา Master, Key Visual ปี 2',
+        'Hero SKU Management: บริหารและยกระดับสินค้าต้นแบบที่ผ่านการพิสูจน์ตลาดแล้ว 20 SKU (Hero Products)',
+        'New SKU Development: พัฒนาสินค้าใหม่ 66 SKU ใน 4 กลุ่มสินค้า (อาหารแปรรูป+เครื่องปรุง / ผลไม้+ข้าว / ชา-กาแฟ / Lifestyle+ของที่ระลึก) ประสานกับโครงการย่อย #2–#5',
+        'Omni-Channel Setup: วางระบบ 4 ช่องทาง — Modern Trade / TikTok Shop / Event-Roadshow / Export',
         'TikTok Shop Partnership: ขอความร่วมมือ TikTok Shop Thailand เปิด Official Store + Live Commerce + KOL 35 ท่าน × 10 เดือน',
         'Miss Grand Ambassador: ขอความร่วมมือ Miss Grand Thailand เป็น Brand Ambassador + Roadshow 10 จังหวัด',
         'Modern Trade Negotiation: เจรจา Listing 5 เครือใหญ่ (Lotus\'s, Big C, TOPS, Gourmet, Villa)',
         'Export Team Build: จัดตั้งทีม Export Ready 5 คน + ขอ T Mark + SMEs Pro-active DITP',
-        'PMO: สำนักงานบริหารโครงการกลาง + Dashboard ติดตาม 11 โครงการ Real-time'
+        'PMO: สำนักงานบริหารโครงการกลาง + Dashboard ติดตาม 7 โครงการ Real-time'
       ],
       partners:[
         'TikTok Shop Thailand (ขอความร่วมมือ ไม่ทำเอกสารผูกพัน)',
@@ -1031,16 +998,17 @@ const projects = [
       ],
       targetAreas:['ทั่วประเทศ 77 จังหวัด','Export 5 งานใหญ่ (Dubai, Shanghai, Tokyo, USA, BKK)'],
       skuList:[
-        '20 Hero SKU (สินค้าปี 1 ที่รอดและยกระดับ)',
-        '60 New SKU กระจายใน 6 หมวดผ่านโครงการ #2–#10'
+        '20 Hero SKU (สินค้าต้นแบบที่ผ่านการพิสูจน์ตลาดแล้ว)',
+        '66 New SKU กระจายใน 4 กลุ่มผ่านโครงการ #2–#5',
+        'หลายๆ SKU ใหม่มาจากภูมิปัญญาของ #7 Wisdom Bank (low-cost leverage)',
       ],
       deliverables:[
-        'Brand Guideline v2 + Master Packaging System 80 SKU',
-        '80 SKU พร้อมวางขาย (Barcode + อย. + GMP)',
+        'Brand Guideline v2 + Master Packaging System 86 SKU',
+        '86 SKU พร้อมวางขาย (Barcode + อย. + GMP)',
         'ทีม Export-ready 5 คน + T Mark',
         'TikTok Official Store + 200 Live sessions',
         '10 Key Account agreement (MT 5 เครือ + E-com 5 ราย)',
-        'PMO + Real-time Dashboard ติดตาม 11 โครงการ'
+        'PMO + Real-time Dashboard ติดตาม 7 โครงการ'
       ],
       kpis:[
         'ยอดขายรวมพอร์ตโฟลิโอ 800+ ลบ.',
@@ -1053,458 +1021,344 @@ const projects = [
     }
   },
   {
-    id:2, name:'ยกระดับอาหารทะเลแปรรูปชายฝั่งไทยสู่ตลาดสากล',
+    id:2, name:'โครงการยกระดับอาหารแปรรูปและเครื่องปรุงไทยของกองทุนหมู่บ้านสู่ตลาดสากล',
     role:'product', tag:'หมวดสินค้า',
-    budget:34, buffer:6, sku:4, startMonth:2, duration:8, color:'#1e40af',
-    split:{ dev:12.5, mkt:8.65, plat:1.6, sales:5.25 },
+    budget:55, sku:17, startMonth:2, duration:8, color:'#1e40af',
+    split:{ dev:27.5, mkt:17.1, plat:0, sales:10.4 },
     detail:{
-      objective:'ยกระดับสินค้าทะเลแปรรูปจากกองทุนชายฝั่งให้ได้มาตรฐาน Export — ทำตลาดพรีเมียมสู่ตะวันออกกลาง / ญี่ปุ่น / จีน ผ่านบูธ Gulfood / Foodex / SIAL',
+      objective:'ยกระดับอาหารทะเลแปรรูปชายฝั่ง + น้ำพริก/พริกแกงไทย 4 ภาค เป็น 17 SKU มาตรฐาน Export (Halal + HACCP + GMP) — ผนึกฐาน R&D และ Export logistics ร่วมกัน ลดต้นทุนขึ้นทะเบียนและเปิดตลาดผ่านบูธเดียว (Gulfood / Foodex / THAIFEX) ช่วยเข้าถึงทั้งตลาดตะวันออกกลาง/ญี่ปุ่น/จีน และร้านอาหารไทยต่างประเทศ 15,000+ ร้าน',
       keyActivities:[
-        'R&D สูตรและเทคโนโลยียืดอายุ (retort / freeze-dry / vacuum)',
-        'พัฒนาบรรจุภัณฑ์ Export-grade + labelling หลายภาษา',
-        'ขึ้นทะเบียน HACCP / GMP / Halal / อย.',
-        'ทดสอบตลาดใน Gulfood / Foodex / THAIFEX ผ่านบูธโครงการหลัก',
-        'สร้าง Cold chain + logistics plan'
+        'R&D สูตรและเทคโนโลยียืดอายุ (retort / freeze-dry / vacuum) สำหรับอาหารทะเลและน้ำพริก/พริกแกง',
+        'Standardize สูตรต้นตำรับจากกองทุนชายฝั่ง 5 จังหวัด + กองทุนแม่บ้านเกษตรกร 4 ภาค',
+        'ขึ้นทะเบียน HACCP + GMP + อย. + Halal (ยื่นรวม 1 ครั้งเพื่อประหยัดค่าธรรมเนียม)',
+        'พัฒนา Packaging 2 รูปแบบ: Jar เข้าห้างในประเทศ + Pouch/Retort สำหรับ Export',
+        'ทดสอบตลาดบูธ Gulfood / Foodex / THAIFEX (ผ่านโครงการหลัก — ใช้บูธเดียวทั้ง 2 หมวดสินค้า)',
+        'Chef Collab + Recipe Card ส่งให้ร้านอาหารไทยต่างประเทศ',
+        'สร้าง Cold chain + Export logistics plan ร่วมใช้ทั้ง 2 กลุ่มสินค้า'
       ],
       partners:[
-        'กรมประมง',
-        'สมาคมประมงแห่งประเทศไทย',
-        'ม.วลัยลักษณ์ (Food Lab)',
-        'DITP (SMEs Pro-active)',
-        'กองทุนประมงชายฝั่ง 5 จังหวัด'
+        'กรมประมง + สมาคมประมงแห่งประเทศไทย',
+        'กองทุนประมงชายฝั่ง 5 จังหวัด + กลุ่มแม่บ้านเกษตรกร 4 ภาค',
+        'ม.วลัยลักษณ์ (Food Lab) + ม.สวนดุสิต (Culinary Arts + Food Science)',
+        'กรมส่งเสริมอุตสาหกรรม (SME)',
+        'DITP (SMEs Pro-active + ช่อง Export ร้านอาหารไทยทั่วโลก 15,000+ แห่ง)',
+        'สมาคมเชฟไทยในต่างประเทศ',
+        'ห้างโมเดิร์นเทรด (ผ่านโครงการหลัก)'
       ],
-      targetAreas:['สุราษฎร์ธานี','ชุมพร','ระนอง','ประจวบคีรีขันธ์','กระบี่'],
+      targetAreas:['สุราษฎร์ธานี/ชุมพร/ระนอง/ประจวบฯ/กระบี่ (อาหารทะเล)','เชียงใหม่ (น้ำพริกหนุ่ม/แกงเหนือ)','ขอนแก่น/อุดรฯ (น้ำพริกตาแดง/ปลาร้า)','ภูเก็ต/นครศรีฯ (น้ำพริกกะปิ/แกงใต้)','เพชรบุรี/ราชบุรี (แกงเผ็ดกลาง)'],
       skuList:[
-        'น้ำพริกทะเลพรีเมียม (retort pouch)',
-        'ปลาแห้ง / กุ้งแห้ง รีแบรนด์ packaging ใหม่',
-        'ทูน่า / ปลากระป๋องพรีเมียมในแบรนด์ VF',
-        'Seafood snack / crispy fish skin'
+        'น้ำพริกทะเลพรีเมียม retort pouch — 1 SKU',
+        'ปลา/กุ้งแห้ง packaging ใหม่ — 1 SKU',
+        'ทูน่า/ปลากระป๋องพรีเมียมแบรนด์ VF — 1 SKU',
+        'Seafood snack / crispy fish skin — 1 SKU',
+        'น้ำพริกหนุ่มเหนือ / ตาแดงอีสาน / กะปิภาคใต้ / เผาภาคกลาง — 4 SKU',
+        'น้ำพริกไตปลา / น้ำพริกนรกซูเปอร์เผ็ด Export — 2 SKU',
+        'พริกแกงเขียวหวาน / เผ็ดแดง / มัสมั่น / พะแนง / ส้มใต้ — 5 SKU',
+        'Gift Box "Thai Kitchen Export" — 3 SKU (Starter + Export + Heritage Curry)'
       ],
       deliverables:[
-        '4 SKU ผ่าน Halal + HACCP + GMP',
-        'Export-ready samples + COA',
-        'บูธร่วม Gulfood / Foodex ผ่านโครงการหลัก',
-        'Cold chain agreement 1 ราย'
+        '17 SKU ผ่าน HACCP + GMP + อย. + Halal cert',
+        'Shelf-life 12+ เดือน (retort/pouch) / 18 เดือน (jar)',
+        'Packaging 2 รูปแบบ: Jar เข้าห้าง + Pouch Export',
+        'Recipe Card พิมพ์ (วิธีทำเมนูไทย 20 เมนู แนบในกล่อง Gift Box)',
+        'บูธร่วม Gulfood / Foodex / THAIFEX ผ่านโครงการหลัก (บูธเดียว)',
+        'Cold chain agreement 2 ราย (ใช้ร่วมทั้ง 2 กลุ่มสินค้า)',
+        'Sample kit ส่งร้านอาหารไทยต่างประเทศ 500 ราย'
       ],
       kpis:[
-        '4 SKU ผ่านมาตรฐาน Export ครบ',
-        'ยอดขาย 35+ ลบ./ปี',
-        'Listing ห้าง 2 เครือ',
-        'Export order 3 lead จาก Gulfood/Foodex'
+        '17 SKU ผ่านมาตรฐาน Export ครบ',
+        'ยอดขาย 70+ ลบ./ปี (Domestic 45 + Export 25)',
+        'Export order 5+ ประเทศ (ตะวันออกกลาง/ญี่ปุ่น/จีน + USA/UK/ออสเตรเลีย/CLMV)',
+        'Listing Modern Trade 4 เครือ + CVS (7-Eleven) pilot',
+        'ร้านอาหารไทยต่างประเทศใช้เป็นวัตถุดิบ 200+ ร้าน',
+        'Shelf-life 12+ เดือน ไม่ต้องแช่เย็น'
       ]
     }
   },
   {
-    id:3, name:'พัฒนาผลไม้ไทยพรีเมียมสู่ตลาดส่งออก',
+    id:3, name:'โครงการส่งเสริมการส่งออกผลไม้และข้าวไทยพรีเมียมโดยกองทุนหมู่บ้าน',
     role:'product', tag:'หมวดสินค้า',
-    budget:43, buffer:7, sku:4, startMonth:2, duration:9, color:'#3b82f6',
-    split:{ dev:17, mkt:10.1, plat:1.9, sales:7 },
+    budget:60, sku:11, startMonth:2, duration:9, color:'#3b82f6',
+    split:{ dev:30.5, mkt:17.6, plat:0, sales:11.9 },
     detail:{
-      objective:'นำผลไม้ไทยเด่น (ทุเรียน / มะม่วง / ลำไย / มังคุด) จากกองทุนสวนผลไม้สู่ตลาด Export เกรดพรีเมียม โดยเฉพาะจีน-ฮ่องกง-ตะวันออกกลาง',
+      objective:'ยกระดับผลไม้ไทยเด่น (ทุเรียน/มะม่วง/ลำไย/มังคุด) + ข้าวหอมมะลิ/ข้าว GI/ข้าวอินทรีย์จากกองทุนสวนผลไม้และนาข้าวเป็น 11 SKU พรีเมียม/ส่งออก — ใช้ Cold chain และ Export logistics ร่วมกัน ลดต้นทุนขึ้นทะเบียน GAP/GI/Organic และทดสอบตลาด SIAL Shanghai / THAIFEX Anuga Asia / Gulfood',
       keyActivities:[
-        'Sourcing สวน GAP + กองทุนผลไม้ 20 แห่ง',
-        'พัฒนา Freeze-dried / IQF / อบแห้งพรีเมียม',
-        'Cold chain + Export logistics partnership',
-        'ขอ GAP / Organic / GI cert',
-        'ทดสอบตลาด SIAL Shanghai + THAIFEX Anuga Asia'
+        'Sourcing สวน GAP + กองทุนผลไม้ 20 แห่ง + สหกรณ์ชาวนา 10 แห่ง',
+        'พัฒนา Freeze-dried / IQF / อบแห้ง (ผลไม้) + Packaging Export-grade ข้าว (ถุงสุญญากาศ 1kg/5kg)',
+        'พัฒนาสินค้าเพิ่มมูลค่าจากข้าว: ข้าวฮางงอก, Rice Granola, Rice Snack',
+        'ขอ GAP / Organic / GI cert (รวมสำรวจและยื่นครั้งเดียว)',
+        'Cold chain + Export logistics partnership (ใช้ร่วมผลไม้และข้าว)',
+        'ทดสอบตลาด SIAL Shanghai + THAIFEX Anuga Asia + Gulfood (บูธเดียว 2 หมวดสินค้า)',
+        'Bulk export negotiation ข้าว + Tasting event ผลไม้ Modern Trade'
       ],
       partners:[
-        'กรมส่งเสริมการเกษตร',
-        'สวนผลไม้กองทุน ระยอง/จันทบุรี/เชียงใหม่',
-        'ม.เกษตรศาสตร์ (Post-harvest)',
-        'สมาคมการค้าผลไม้ไทย',
+        'กรมส่งเสริมการเกษตร + กรมการข้าว + กรมพัฒนาที่ดิน',
+        'สวนผลไม้กองทุน ระยอง/จันทบุรี/เชียงใหม่ + สหกรณ์ชาวนา 10 แห่ง',
+        'ม.เกษตรศาสตร์ (Post-harvest + R&D)',
+        'สมาคมการค้าผลไม้ไทย + GI-TISTR',
         'DITP (Thailand Pavilion SIAL Shanghai)'
       ],
-      targetAreas:['จันทบุรี','ระยอง','ตราด','เชียงใหม่','ลำพูน'],
+      targetAreas:['จันทบุรี/ระยอง/ตราด/เชียงใหม่/ลำพูน (ผลไม้)','สุรินทร์/ยโสธร/ร้อยเอ็ด/ศรีสะเกษ/บุรีรัมย์ (ข้าว)'],
       skuList:[
-        'ทุเรียน Freeze-dried VF Premium',
-        'มังคุดอบแห้ง single-serve',
-        'ลำไยแห้งพรีเมียม gift pack',
-        'น้ำผลไม้ UHT VF (100% juice)'
+        'ทุเรียน Freeze-dried VF Premium — 1 SKU',
+        'มังคุดอบแห้ง single-serve — 1 SKU',
+        'ลำไยแห้งพรีเมียม gift pack — 1 SKU',
+        'น้ำผลไม้ UHT VF — 1 SKU',
+        'ข้าวหอมมะลิ GI Tung Kula Ronghai — 2 SKU (1kg + 5kg)',
+        'ข้าวฮางงอก ready-to-cook pouch — 1 SKU',
+        'Rice Granola VF — 1 SKU',
+        'Rice Snack VF — 1 SKU',
+        'Gift Box Thai Heritage (ผลไม้ + ข้าวพรีเมียม) — 2 SKU'
       ],
       deliverables:[
-        '4 SKU Export pack + Multi-language label',
-        'Cold chain agreement 2 ราย',
-        'GAP Orchard 20 แห่ง certified',
-        'บูธ SIAL Shanghai 1 slot + sample book'
+        '11 SKU Export pack + Multi-language label',
+        'Cold chain agreement 2 ราย (ใช้ร่วมผลไม้+ข้าว)',
+        'GAP Orchard 20 แห่ง + GI cert 1 ชนิด + Organic 2 ชนิด',
+        'Packaging Export standard (ผลไม้ + ข้าว)',
+        'Bulk Export contract ข้าว 1 ราย',
+        'บูธ SIAL Shanghai 1 slot + sample book รวม'
       ],
       kpis:[
-        'Export 50+ ลบ.',
-        'GAP Orchard 20 แห่ง',
+        'Export รวมผลไม้ + ข้าว 70+ ลบ.',
+        'GAP Orchard 20 แห่ง + Farmer network 2,000+ ครัวเรือน',
         'Listing ห้างจีน 2 เครือ (Hema / Sam\'s Club)',
-        'Export lead 5 รายจาก SIAL'
+        'Export lead 8 รายจาก SIAL / Gulfood',
+        'GI cert 1 ชนิด + Organic 2 ชนิด',
+        'Modern Trade listing 3 เครือ'
       ]
     }
   },
   {
-    id:4, name:'ส่งเสริมชาและกาแฟไทยจากยอดดอย',
+    id:4, name:'โครงการพัฒนาชาและกาแฟพิเศษจากชุมชนบนพื้นที่สูง',
     role:'product', tag:'หมวดสินค้า',
-    budget:30, buffer:5, sku:3, startMonth:3, duration:8, color:'#1e3a8a',
-    split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 },
+    budget:50, sku:10, startMonth:3, duration:8, color:'#1e3a8a',
+    split:{ dev:24.7, mkt:15.7, plat:0, sales:9.6 },
     detail:{
-      objective:'ยกระดับชาและกาแฟจากกองทุนบนดอยเป็นสินค้า Single-origin พรีเมียม พร้อม Story-driven packaging สู่ตลาด Specialty',
+      objective:'ยกระดับชาและกาแฟจากกองทุนบนดอยเป็นสินค้า Single-origin พรีเมียม 10 SKU พร้อม Story-driven packaging และมาตรฐานคุณภาพระดับสากล — เน้นเจาะตลาด Specialty ในประเทศเป็นหลัก (Modern Trade + Specialty Coffee Shops + Tourism) พร้อมเตรียมบรรจุภัณฑ์และมาตรฐานคุณภาพระดับ Export-ready เพื่อเปิดโอกาสขยายตลาดต่างประเทศในอนาคตโดยไม่ผูกพันตัวชี้วัดการส่งออกในโครงการนี้',
       keyActivities:[
-        'Cupping & Grading โดย Q-grader',
-        'Specialty Roast + Drip Bag development',
-        'Packaging เน้น Story-telling แต่ละดอย',
-        'ขอ Fair Trade / Specialty Coffee cert',
-        'Tasting Event ใน Café Amazon / Starbucks'
+        'Cupping & Grading โดย Q-grader + ตั้ง In-house Cupping Lab สำหรับตรวจคุณภาพทุก lot',
+        'Specialty Roast + Drip Bag + Cold Brew + Capsule (compatible) development',
+        'Packaging 2 ระดับ: Retail Story-telling แต่ละดอย + Export-ready Multi-lingual Label (ไทย/อังกฤษ/จีน)',
+        'ขอ Specialty Coffee / Fair Trade / Organic / มาตรฐาน Food-grade สำหรับตลาดในประเทศที่รองรับโอกาสส่งออก',
+        'Tasting Event ใน Café Amazon / ร้านกาแฟชั้นนำ / Specialty Coffee Shops (ในประเทศ)',
+        'ขยายประเภทชา: Jasmine / Pu\'er variant + Gift Set Premium Export-ready Pack',
+        'Barista Training เครือข่ายกองทุน + คู่มือมาตรฐานการชงและการเก็บรักษา',
+        'จัดทำ sample book + Factsheet 3 ภาษา เพื่อให้พร้อมเมื่อมีโอกาสออกบูธต่างประเทศภายใต้โครงการอื่น'
       ],
       partners:[
         'โครงการหลวง (ขอความร่วมมือ)',
         'สถาบันชาและกาแฟฯ ม.แม่ฟ้าหลวง',
         'กรมส่งเสริมการเกษตร',
         'Specialty Coffee Association of Thailand',
-        'Café Amazon (ขอความร่วมมือทดลองวาง)'
+        'Café Amazon / ร้านกาแฟชั้นนำในไทย (ขอความร่วมมือทดลองวาง)',
+        'ห้าง Gourmet + Tops Fine Food (Specialty Section)'
       ],
       targetAreas:['เชียงราย','เชียงใหม่','น่าน','ลำปาง','แม่ฮ่องสอน'],
       skuList:[
-        'Specialty Coffee (Drip Bag + Whole Beans) 3 origins',
-        'Oolong Tea Premium (ดอยแม่สลอง)',
-        'Herbal Tea Blend สูตรชุมชน'
+        'Specialty Coffee Drip Bag — 2 origins',
+        'Specialty Coffee Whole Beans — 2 origins',
+        'Cold Brew Coffee Concentrate (bottled) — 1 SKU',
+        'Coffee Capsule Premium (compatible) — 1 SKU',
+        'Oolong Tea Premium (ดอยแม่สลอง) — 1 SKU',
+        'Jasmine / Pu\'er Thai variant — 1 SKU',
+        'Herbal Tea Blend สูตรชุมชน — 1 SKU',
+        'Tea & Coffee Gift Set — Premium Export-ready Pack — 1 SKU'
       ],
       deliverables:[
-        '3 SKU พร้อม Story-driven packaging',
-        'Specialty Coffee certificate',
-        'Tasting Event 5 สาขา Café Amazon',
-        'Export prep USA Natural Products'
+        '10 SKU พร้อม Story-driven packaging (retail) + Multi-lingual label (export-ready)',
+        'Specialty Coffee / Fair Trade / Organic / Food-grade certificates',
+        'Tasting Event 5 สาขา Café Amazon + Specialty Coffee Shops',
+        'Barista Training Kit + คู่มือมาตรฐานการชง',
+        'In-house Cupping Lab + QC system ทุก lot',
+        'Sample Book + Factsheet 3 ภาษา พร้อมใช้เมื่อมีโอกาสออกงานต่างประเทศผ่านโครงการอื่น'
       ],
       kpis:[
-        '3 SKU Listing Starbucks / Café Amazon',
-        'ยอดขาย 22 ลบ.',
-        'Export lead USA 3 ราย',
-        'Barista train 30 คนในเครือข่ายกองทุน'
+        '10 SKU Listing ร้านกาแฟชั้นนำ / Café Amazon / Specialty Coffee Shops',
+        'ยอดขาย 35+ ลบ. (ในประเทศ)',
+        'ได้ Specialty Coffee + Fair Trade + Organic cert อย่างน้อย 2 ใน 3',
+        'Barista Training 50 คนในเครือข่ายกองทุน',
+        'Brand awareness "ชา-กาแฟดอยแบรนด์ VF" ในกลุ่ม Specialty consumer 25%+',
+        'พร้อม Export-ready (Multi-lingual packaging + certificates) — โดยไม่ผูกเป้าการส่งออกในโครงการ'
       ]
     }
   },
   {
-    id:5, name:'พัฒนาสมุนไพรไทยและผลิตภัณฑ์สุขภาพชุมชน',
-    role:'product', tag:'หมวดสินค้า',
-    budget:34, buffer:6, sku:3, startMonth:3, duration:8, color:'#2563eb',
-    split:{ dev:13, mkt:7.8, plat:1.4, sales:5.8 },
+    id:5, name:'โครงการพัฒนาของฝากและของที่ระลึกไทยร่วมสมัยของกองทุนหมู่บ้าน',
+    role:'product', tag:'ของฝาก-ของที่ระลึก',
+    budget:91, sku:27, startMonth:3, duration:8, color:'#2563eb',
+    split:{ dev:45.9, mkt:25.7, plat:0, sales:19.4 },
     detail:{
-      objective:'พัฒนาสมุนไพรและผลิตภัณฑ์สุขภาพจากกองทุน (ขมิ้น / ไพล / กระชายดำ / เปล้าน้อย) เป็นสินค้าส่งออกพร้อม อย. + GMP',
+      objective:'พัฒนาหมวด "ของฝาก-ของที่ระลึก" ไทยร่วมสมัยจากกองทุนหมู่บ้านเป็น 27 SKU — ผสานงานฝีมือชุมชน (ผ้า/เซรามิก/สมุนไพร) + งานดีไซน์ร่วมสมัย (พระเรซินโมเดิร์น/Mascot Art Toy/เครื่องราง Modern) + Gift Set/Gift Box หลากหลายโอกาส — จับตลาดนักท่องเที่ยวไทย-ต่างชาติผ่านสนามบิน, TAT Shop, โรงแรม 4-5 ดาว, และแหล่งท่องเที่ยวหลัก พร้อมขายในประเทศผ่าน Pop-up Flagship และ Modern Trade',
       keyActivities:[
-        'R&D Standardized extract (HPLC-controlled)',
-        'ขึ้นทะเบียน อย. (10-5*) + GMP Plant',
-        'พัฒนา Packaging medical-grade',
-        'ทดสอบตลาด Natural Products Expo USA',
-        'จัดทำ Safety dossier สำหรับ EU/USA'
+        'Design + Prototyping ของฝาก 27 SKU — ผสานงานฝีมือชุมชนกับดีไซน์ร่วมสมัย',
+        'Collab ศิลปิน/Designer ไทย 3-5 ท่าน ออกแบบ Limited Edition (Mascot ประจำภาค / พระพุทธรูปเรซินดีไซน์โมเดิร์น / ผ้า Capsule Collection)',
+        'พัฒนาเครื่องราง-จี้โมเดิร์น (รับประทับพระเกจิ) + Certificate of Authenticity + Hologram + Serial Number (physical)',
+        'Packaging Premium Gift — กล่อง/ถุงแบบของฝากที่พกง่ายสำหรับนักท่องเที่ยวและบิน',
+        'Gift Set/Gift Box ตามโอกาส (Festival Edition: สงกรานต์/ลอยกระทง/ตรุษจีน + Thai Modern Heritage)',
+        'Pop-up Flagship ICONSIAM / Central Embassy (โซนของฝาก-ของที่ระลึก)',
+        'Launch Event TAT Shop + ย่านท่องเที่ยวใหญ่ 2 งาน',
+        'จัดทำ Lookbook + Photoshoot + Storyline Content สำหรับ TikTok/IG นักท่องเที่ยว',
+        'ทดสอบตลาดงานแสดงสินค้าของฝาก/ของขวัญ (TFX — Thailand Gift & Tourism Fair + ASEAN Gifts Show) เพื่อเปิดโอกาสตลาดในอนาคต'
       ],
       partners:[
-        'กรมการแพทย์แผนไทยและการแพทย์ทางเลือก',
-        'ม.มหิดล (Phytochemistry Lab)',
-        'สำนักงาน อย.',
-        'กองทุนชุมชนสมุนไพร 10 แห่ง',
-        'Thai Herbal Association'
+        'การท่องเที่ยวแห่งประเทศไทย (TAT Shop + เส้นทางท่องเที่ยว)',
+        'สนามบินสุวรรณภูมิ/ดอนเมือง/ภูเก็ต/เชียงใหม่ (King Power, ThaiZen, AOT Duty Free)',
+        'วัดดังที่เป็นพันธมิตร (รับประทับ/Spiritual narratives)',
+        'กรมศิลปากร (ตรวจรับแบบพุทธศิลป์) + SACIT (สถาบันหัตถกรรมร่วมสมัย)',
+        'ศิลปิน Art Toy Thailand + Designer / Fashion School',
+        'โรงแรม 4-5 ดาวในย่านท่องเที่ยว (Gift corner + Welcome amenity)',
+        'Pop-up retailer: ICONCRAFT, Central The 1, SIAM Discovery',
+        'กลุ่มหล่อเรซิน + กลุ่มผ้าทอ/เซรามิก/สมุนไพร กองทุนชุมชน 15+ แห่ง'
       ],
-      targetAreas:['สกลนคร','เลย','ปราจีนบุรี','นครปฐม','อุดรธานี'],
+      targetAreas:['บุรีรัมย์/สุรินทร์/น่าน/ลำพูน (ผ้า+หัตถกรรม)','เชียงใหม่/ลำพูน (เซรามิก)','นครปฐม (พระเครื่อง)','อยุธยา/สุโขทัย (ของที่ระลึกประวัติศาสตร์)','สกลนคร/นครปฐม/เลย (สมุนไพรของฝาก)'],
       skuList:[
-        'ยาหม่องไพลสูตรชุมชนยกระดับ',
-        'แคปซูลขมิ้นชันมาตรฐาน',
-        'ชาสมุนไพรกระชายดำ'
+        'พระพุทธรูปเรซิน Collab Artist — 3 SKU Limited 3,000 ชิ้น/รุ่น',
+        'พระเครื่อง Modern Collab รับประทับวัดดัง — 2 SKU Limited',
+        'Mascot ประจำภาค (เหนือ/อีสาน/กลาง/ใต้) Art Toy — 4 SKU',
+        'เครื่องราง VF Sacred Charm 4 ธาตุ + จี้โมเดิร์น Talisman — 2 SKU',
+        'Gift Box "Thai Modern Heritage" Premium Pack นักท่องเที่ยว — 1 SKU',
+        'Gift Box "Festival Edition" (สงกรานต์/ลอยกระทง/ตรุษจีน) — 2 SKU',
+        'ประติมากรรมขนาดเล็ก 12 นักษัตร — 1 SKU',
+        'Mini Buddha Altar Modern (สำหรับคอนโด/ออฟฟิศ) — 1 SKU',
+        'ผ้าไหม Shawl/Scarf ของฝาก premium — 2 SKU',
+        'กระเป๋าผ้าทอ/หวาย ของฝาก (Tote + Clutch) — 2 SKU',
+        'Ceramic Tea Set / Plate Set ของฝากไทยร่วมสมัย — 2 SKU',
+        'ชาสมุนไพร Gift Box ของฝาก (กระชายดำ / ไพล / ตะไคร้) — 2 SKU',
+        'ของฝากอาหาร/ขนมไทยประจำภาค Premium Pack — 3 SKU'
       ],
       deliverables:[
-        '3 SKU อย.ผ่าน + GMP',
-        'Export doc USA + EU ready',
-        'Safety dossier + COA',
-        'บูธ Anaheim Natural Expo 1 slot'
+        '27 SKU ของฝาก พร้อม Packaging Premium + Certificate of Authenticity',
+        'Collab Portfolio ร่วมกับศิลปิน/Designer ไทย 3-5 ท่าน',
+        'Flagship Pop-up 2 สาขา + Launch Event TAT Shop 2 งาน',
+        'Anti-counterfeit system (Serial Number + Hologram + Certificate กระดาษ)',
+        'ช่องทางจำหน่าย: TAT Shop + King Power สนามบิน + โรงแรมพันธมิตร + Pop-up',
+        'Lookbook + Storyline Content 50+ ชิ้น (วิดีโอ/ภาพ/เรื่องเล่า)',
+        'Playbook "ของฝากไทยร่วมสมัย" — สูตรออกแบบ Limited Edition ต่อปี'
       ],
       kpis:[
-        '3 SKU อย. + GMP',
-        'ยอดขาย 22 ลบ.',
-        'Anaheim Natural Expo 5 lead',
-        'ขึ้นทะเบียน USA FDA 1 SKU'
+        'ยอดขายรวม 75+ ลบ. ใน 8 เดือน',
+        'Sold-out ทุก Limited Edition ภายใน 6 เดือน (Limited = 1,500-3,000 ชิ้น/รุ่น)',
+        'Brand awareness "ของฝากไทยร่วมสมัย = VF" ในกลุ่มเป้าหมายอายุ 25-55 ปี ไม่น้อยกว่า 25%',
+        'วางจำหน่ายผ่าน TAT Shop + สนามบิน 4 แห่ง + โรงแรมพันธมิตร 10+ แห่ง',
+        'NPS นักท่องเที่ยวที่ซื้อของฝาก 70+',
+        'มีศิลปิน/ชุมชนสนใจ Collab รอบถัดไป 10+ ราย'
       ]
     }
   },
   {
-    id:6, name:'ส่งเสริมหัตถกรรมและผ้าทอร่วมสมัย',
+    id:6, name:'โครงการสนับสนุนการผลิตปุ๋ยอินทรีย์ชุมชนเพื่อเกษตรกรไทย (VF Green)',
     role:'product', tag:'หมวดสินค้า',
-    budget:30, buffer:5, sku:3, startMonth:3, duration:8, color:'#60a5fa',
-    split:{ dev:11, mkt:7.8, plat:1.4, sales:4.8 },
+    budget:65, sku:5, startMonth:3, duration:8, color:'#7f1d1d',
+    split:{ dev:36.1, mkt:12, plat:0, sales:16.9 },
     detail:{
-      objective:'ยกระดับหัตถกรรมและผ้าทอจากกองทุน (ไหม / ฝ้าย / หวาย / เซรามิก) เป็น Lifestyle Brand ร่วมสมัย ตลาดคนรุ่นใหม่ + Export',
+      objective:'ให้กองทุนหมู่บ้านผลิตปุ๋ยอินทรีย์มาตรฐาน 50 ศูนย์ผลิต (ขยายจาก 30 ศูนย์ในแผนเดิม) ขายในพื้นที่ ลดต้นทุนเกษตรกร + ลดการใช้สารเคมี (ตอบโจทย์รัฐบาล) — งบ 65 ลบ. แยกย่อย: อุปกรณ์ผลิต 50 ศูนย์ 28 ลบ. / R&D+ทะเบียน+QC Lab 6 ลบ. / Packaging 4 ลบ. / Training+ศึกษาดูงาน 5 ลบ. / Distribution 15 จว. 8 ลบ. / Marketing เกษตรกร+Activation 7 ลบ. / PMO+Audit 7 ลบ.',
       keyActivities:[
-        'Design Collab กับ OTOP Designer / Fashion School',
-        'Modern Colorway & Silhouette — capsule collection',
-        'Retail packaging + Hang tag Story',
-        'Pop-up Flagship ICONSIAM / Central Embassy',
-        'Lookbook + Photoshoot'
+        'สำรวจและคัดเลือกกองทุนที่มีศักยภาพผลิตปุ๋ย 50 แห่ง (ขยายจาก 30)',
+        'ถ่ายทอดสูตรและเทคโนโลยีมาตรฐาน + Training ต่อเนื่อง',
+        'ขึ้นทะเบียนปุ๋ยอินทรีย์ (มกอช.) + QC Lab NPK Test ทุก lot',
+        'พัฒนา Packaging + Brand VF Green หลายไซซ์',
+        'วางระบบขายในพื้นที่ 15 จังหวัด ผ่านกองทุนและร้านเกษตร',
+        'Activation เกษตรกรใช้งานถูกวิธี + Farmer Day Event ในพื้นที่',
+        'สร้างระบบ Audit คุณภาพระหว่างศูนย์ผลิต'
       ],
       partners:[
-        'กรมส่งเสริมอุตสาหกรรม',
-        'SACIT (สถาบันหัตถกรรมร่วมสมัย)',
-        'Fashion designer network',
-        'มูลนิธิส่งเสริมศิลปาชีพฯ',
-        'Pop-up retailer: ICONCRAFT, Central The 1'
-      ],
-      targetAreas:['บุรีรัมย์','สกลนคร','สุรินทร์','น่าน','ลำพูน'],
-      skuList:[
-        'ผ้าไหม Capsule Collection 3 สี',
-        'กระเป๋าฝ้าย / หวายงานทอชุมชน',
-        'Ceramic Homeware VF'
-      ],
-      deliverables:[
-        '3 SKU + Lookbook + E-catalog',
-        'Collab designer 2 ท่าน',
-        'Flagship Pop-up 2 สาขา',
-        'Export prep Japan / Singapore'
-      ],
-      kpis:[
-        'ยอดขาย 18 ลบ.',
-        'Listing lifestyle store 3 เครือ',
-        'Export order Japan/Singapore 2 ราย',
-        'Social media reach 3M impressions'
-      ]
-    }
-  },
-  {
-    id:7, name:'ข้าวพรีเมียมและผลิตภัณฑ์มูลค่าเพิ่มจากข้าว',
-    role:'product', tag:'หมวดสินค้า',
-    budget:25, buffer:4, sku:3, startMonth:3, duration:7, color:'#1d4ed8',
-    split:{ dev:9, mkt:6.7, plat:1.1, sales:4.2 },
-    detail:{
-      objective:'ยกระดับข้าวหอมมะลิ / ข้าว GI / ข้าวอินทรีย์จากกองทุนนาข้าวเป็นแบรนด์ VF พรีเมียม + สินค้าเพิ่มมูลค่า (granola, ข้าวฮางงอก)',
-      keyActivities:[
-        'ขึ้นทะเบียน GAP / Organic / GI',
-        'ออกแบบ Packaging Export-grade (ถุงสุญญากาศ 1kg/5kg)',
-        'พัฒนาสินค้าเพิ่มมูลค่า: ข้าวฮางงอก, granola',
-        'Bulk export negotiation',
-        'Tasting event ใน Modern Trade'
-      ],
-      partners:[
-        'กรมการข้าว',
-        'กรมพัฒนาที่ดิน',
-        'สหกรณ์ชาวนา 10 แห่ง',
-        'ม.เกษตรศาสตร์',
-        'GI-TISTR'
-      ],
-      targetAreas:['สุรินทร์','ยโสธร','ร้อยเอ็ด','ศรีสะเกษ','บุรีรัมย์'],
-      skuList:[
-        'ข้าวหอมมะลิ GI Tung Kula Ronghai 1kg/5kg',
-        'ข้าวฮางงอก ready-to-cook pouch',
-        'Rice Granola / Rice snack VF'
-      ],
-      deliverables:[
-        '3 SKU GI + Organic cert',
-        'Packaging Export standard',
-        'Bulk Export contract 1 ราย',
-        'Listing Modern Trade 3 เครือ'
-      ],
-      kpis:[
-        'Export ผ่าน Gulfood / SIAL',
-        'ยอดขาย 22 ลบ.',
-        'Farmer network 2,000+ ครัวเรือน',
-        'GI cert 1 ชนิด + Organic 2 ชนิด'
-      ]
-    }
-  },
-  {
-    id:8, name:'น้ำพริกและพริกแกงไทยสู่ครัวโลก (VF Thai Kitchen)',
-    role:'product', tag:'หมวดสินค้า',
-    budget:29, buffer:5, sku:10, startMonth:4, duration:7, color:'#93c5fd',
-    split:{ dev:11, mkt:7, plat:1.2, sales:4.8 },
-    detail:{
-      objective:'ยกระดับ "น้ำพริกและพริกแกง" สูตรชุมชน 4 ภาคเป็น 10 SKU พร้อมขาย — เน้น Export สู่ตลาดต่างประเทศที่นิยมอาหารไทย + Modern Trade ในประเทศ ตอบโจทย์ตลาดอาหารไทยที่กำลังเติบโตทั่วโลก',
-      keyActivities:[
-        'คัดเลือกสูตรต้นตำรับจากกองทุนแต่ละภาค (5 น้ำพริก + 5 พริกแกง)',
-        'R&D Standardize สูตร + Shelf-life extension (retort pouch / vacuum jar)',
-        'ขึ้นทะเบียน HACCP + GMP + อย. + Halal',
-        'พัฒนา Packaging 2 แบบ: Jar พรีเมียมเข้าห้าง + Pouch สำหรับ Export',
-        'ทดสอบตลาดบูธ Gulfood / Foodex / THAIFEX (ผ่านโครงการหลัก)',
-        'Chef Collab + Recipe Card สำหรับทำเมนูไทยง่ายๆ ที่บ้าน',
-        'Distribution ทั้ง Modern Trade ในประเทศ + ร้านอาหารไทยต่างประเทศ'
-      ],
-      partners:[
-        'ม.สวนดุสิต (Culinary Arts + Food Science)',
-        'กรมส่งเสริมอุตสาหกรรม (SME)',
-        'กลุ่มแม่บ้านเกษตรกร 4 ภาค',
-        'สมาคมเชฟไทยในต่างประเทศ (ขอความร่วมมือ)',
-        'DITP — ช่อง Export ร้านอาหารไทยทั่วโลก 15,000+ แห่ง',
-        'ห้างโมเดิร์นเทรด (ผ่านโครงการหลัก)'
-      ],
-      targetAreas:['เชียงใหม่ (น้ำพริกหนุ่ม/แกงเหนือ)','ขอนแก่น/อุดร (น้ำพริกตาแดง/ปลาร้า)','ภูเก็ต/นครศรีฯ (น้ำพริกกะปิ/แกงใต้)','เพชรบุรี/ราชบุรี (แกงเผ็ดกลาง)','กรุงเทพฯ (สำนักงานกลาง)'],
-      skuList:[
-        '1. น้ำพริกหนุ่มเหนือ VF (retort pouch + jar)',
-        '2. น้ำพริกตาแดงอีสาน VF',
-        '3. น้ำพริกกะปิภาคใต้ VF',
-        '4. น้ำพริกเผาภาคกลาง VF (สูตรเข้มข้น)',
-        '5. น้ำพริกปลาร้าอีสาน VF (สำหรับตลาด CLMV)',
-        '6. พริกแกงเขียวหวาน VF (สูตร Export)',
-        '7. พริกแกงเผ็ดแดง VF',
-        '8. พริกแกงมัสมั่น VF',
-        '9. พริกแกงพะแนง VF',
-        '10. พริกแกงส้มภาคใต้ VF'
-      ],
-      deliverables:[
-        '10 SKU พร้อม HACCP + GMP + อย. + Halal cert',
-        'Shelf-life 12+ เดือน (retort pouch) และ 18 เดือน (jar)',
-        'Packaging 2 รูปแบบ: Jar เข้าห้าง + Pouch Export',
-        'Recipe Card QR — วิธีทำเมนูไทย 20 เมนู',
-        'บูธร่วม Gulfood / THAIFEX ผ่านโครงการหลัก',
-        'Sample kit ส่งร้านอาหารไทยต่างประเทศ 500 ราย'
-      ],
-      kpis:[
-        '10 SKU ผ่านมาตรฐาน Export ครบ',
-        'ยอดขายปี 2: 45+ ลบ. (Domestic 25 + Export 20)',
-        'Export order 5+ ประเทศ (USA, UK, ออสเตรเลีย, ญี่ปุ่น, CLMV)',
-        'Listing Modern Trade 5 เครือ + CVS (7-Eleven) pilot',
-        'Shelf-life 12+ เดือน ไม่ต้องแช่เย็น',
-        'ร้านอาหารไทยต่างประเทศใช้เป็นวัตถุดิบ 200+ ร้าน'
-      ]
-    }
-  },
-  {
-    id:9, name:'เครือข่ายร้านค้ากองทุน VF Smart Store × ธงฟ้า',
-    role:'product', tag:'หมวดสินค้า',
-    budget:48, buffer:8, sku:0, startMonth:2, duration:9, color:'#b91c1c',
-    split:{ dev:3, mkt:8, plat:15, sales:14 },
-    detail:{
-      objective:'ยกระดับร้านค้ากองทุนเป็น "VF Smart Store" 200 สาขาเต็มรูปแบบ — ซื้อสินค้าธงฟ้าจากกระทรวงพาณิชย์มาขายในชุมชน + ขายสินค้า VF พร้อมกัน (ตอบโจทย์รัฐบาล #1) — งบ 48 ลบ. แยกย่อยชัดเจน: ป้าย+Interior 10 ลบ. / POS 12 ลบ. / Training 2 ลบ. / Dashboard 3 ลบ. / Activation 5 ลบ. / PMO 5 ลบ. / Reserve 3 ลบ. + Buffer 8 ลบ.',
-      keyActivities:[
-        'คัดเลือก Pilot Store 200 ร้านจากทุกภาค',
-        'ระบบ POS + Stock management เชื่อมทั้งเครือข่าย',
-        'ติดตั้งป้าย "VF Smart Store" + Interior standard',
-        'จัดการ Procurement สินค้าธงฟ้าแบบรวม Lot',
-        'Re-stock สินค้า VF จากโครงการอื่นๆ',
-        'Training เจ้าของร้าน + คู่มือมาตรฐาน'
-      ],
-      partners:[
-        'กระทรวงพาณิชย์ (ขอความร่วมมือ โครงการธงฟ้า)',
-        'กรมการค้าภายใน',
-        'กองทุนระดับจังหวัด 20 จังหวัด',
-        'Distributor สินค้าธงฟ้า'
-      ],
-      targetAreas:['200 ร้าน','20 จังหวัด','4 ภาค (เหนือ/อีสาน/กลาง/ใต้)'],
-      skuList:['— (โครงการนี้เป็นช่องทาง ไม่ใช่สินค้าใหม่ แต่เป็นร้านกระจายสินค้า VF + ธงฟ้า)'],
-      deliverables:[
-        '200 VF Smart Store + ป้ายมาตรฐาน',
-        'ระบบ POS + Stock เชื่อมกลาง',
-        'คู่มือมาตรฐานร้าน + Training material',
-        'สัญญาซื้อสินค้าธงฟ้าแบบรวม Lot',
-        'Dashboard ติดตามยอดขายทั้งเครือข่าย'
-      ],
-      kpis:[
-        '200 Smart Store Active 100%',
-        'ยอดซื้อสินค้าธงฟ้า 100+ ลบ.',
-        'ยอดขายสินค้า VF ผ่านร้าน 80+ ลบ.',
-        'Footfall เฉลี่ย 150 คน/ร้าน/วัน',
-        'คะแนนความพึงพอใจชุมชน 4.5/5'
-      ]
-    }
-  },
-  {
-    id:10, name:'ผลิตปุ๋ยอินทรีย์ชุมชน VF Green',
-    role:'product', tag:'หมวดสินค้า',
-    budget:36, buffer:6, sku:3, startMonth:3, duration:8, color:'#7f1d1d',
-    split:{ dev:15, mkt:5, plat:3, sales:7 },
-    detail:{
-      objective:'ให้กองทุนหมู่บ้านผลิตปุ๋ยอินทรีย์มาตรฐาน 30 ศูนย์ผลิต ขายในพื้นที่ ลดต้นทุนเกษตรกร + ลดการใช้สารเคมี (ตอบโจทย์รัฐบาล #2) — งบ 36 ลบ. แยกย่อย: อุปกรณ์ผลิต 30 ศูนย์ 12 ลบ. / R&D+ทะเบียน 2 ลบ. / Packaging 2 ลบ. / Training 2 ลบ. / Distribution 10 จว. 3 ลบ. / QC Lab+NPK Test 3 ลบ. / Marketing เกษตรกร 3 ลบ. / PMO 3 ลบ. + Buffer 6 ลบ.',
-      keyActivities:[
-        'สำรวจกองทุนที่มีศักยภาพผลิตปุ๋ย 30 แห่ง',
-        'ถ่ายทอดสูตรและเทคโนโลยีมาตรฐาน',
-        'ขึ้นทะเบียนปุ๋ยอินทรีย์ (มกอช.)',
-        'พัฒนา Packaging + Brand VF Green',
-        'วางระบบขายในพื้นที่ผ่านกองทุนและร้านเกษตร',
-        'Training เกษตรกรใช้งานถูกวิธี'
-      ],
-      partners:[
-        'กรมพัฒนาที่ดิน',
-        'กรมวิชาการเกษตร',
+        'กรมพัฒนาที่ดิน + กรมวิชาการเกษตร',
         'มกอช. (สำนักงานมาตรฐานเกษตรอินทรีย์)',
         'สภาเกษตรกรแห่งชาติ',
-        'กองทุนชุมชนผลิตปุ๋ย 30 แห่ง'
+        'กองทุนชุมชนผลิตปุ๋ย 50 แห่ง',
+        'สหกรณ์เกษตรในพื้นที่ 15 จังหวัด'
       ],
-      targetAreas:['30 ศูนย์ผลิต','10 จังหวัด','ภาคกลาง + อีสาน + เหนือ'],
+      targetAreas:['50 ศูนย์ผลิต','15 จังหวัด','ภาคกลาง + อีสาน + เหนือ + ใต้'],
       skuList:[
         'ปุ๋ยอินทรีย์อัดเม็ด VF Green (25 kg)',
         'ปุ๋ยน้ำหมักชีวภาพ VF Green (20 L)',
-        'ปุ๋ยสูตรเฉพาะสำหรับข้าว / ผลไม้'
+        'ปุ๋ยสูตรเฉพาะข้าว VF Green Rice Formula',
+        'ปุ๋ยสูตรเฉพาะไม้ผล VF Green Orchard Formula',
+        'ปุ๋ยสูตรผัก+ดอกไม้ VF Green Garden Formula'
       ],
       deliverables:[
-        '3 SKU ทะเบียนปุ๋ยถูกต้อง',
-        '30 ศูนย์ผลิตมาตรฐาน',
-        'คู่มือมาตรฐานการผลิต',
-        'Distribution network ในพื้นที่ 10 จังหวัด'
+        '5 SKU ทะเบียนปุ๋ยถูกต้อง',
+        '50 ศูนย์ผลิตมาตรฐาน (ขยายจาก 30)',
+        'คู่มือมาตรฐานการผลิต + Training kit',
+        'Distribution network ในพื้นที่ 15 จังหวัด',
+        'QC Lab NPK Test + Audit system'
       ],
       kpis:[
-        '3 SKU ขึ้นทะเบียนปุ๋ย',
-        'ปริมาณขาย 5,000+ ตัน/ปี',
-        'เกษตรกรใช้งาน 15,000+ ราย',
+        '5 SKU ขึ้นทะเบียนปุ๋ย',
+        'ปริมาณขาย 10,000+ ตัน/ปี',
+        'เกษตรกรใช้งาน 30,000+ ราย',
         'ลดต้นทุนเกษตรกร 20%',
-        'รายได้เข้าชุมชน 15+ ลบ./ปี'
+        'รายได้เข้าชุมชน 30+ ลบ./ปี'
       ]
     }
   },
   {
-    id:11, name:'VF Entrepreneur Academy — บ่มเพาะผู้ประกอบการรุ่นใหม่',
-    role:'talent', tag:'บ่มเพาะคน',
-    budget:42, buffer:7, sku:0, startMonth:1, duration:10, color:'#4338ca',
-    split:{ dev:10, mkt:5, plat:5, sales:15 },
+    id:7, name:'โครงการจัดตั้งธนาคารภูมิปัญญาและคุ้มครองทรัพย์สินทางปัญญาชุมชน (VF Wisdom Bank)',
+    role:'platform', tag:'คลังทรัพย์สินทางปัญญา',
+    budget:20, sku:0, startMonth:1, duration:10, color:'#0f766e',
+    split:{ dev:5, mkt:2, plat:7.5, sales:5.5 },
     detail:{
-      objective:'สร้าง "เลือดใหม่" ให้กองทุนหมู่บ้าน 1,000+ คน ผ่านหลักสูตร Business School แบบกองทุนเอง — แก้ปัญหา Succession (กองทุนขาดคนรุ่นใหม่) + ต่อยอดพอร์ต VF ปี 3 ด้วยผู้ประกอบการเจ้าของไอเดียในชุมชน พร้อม Seed Fund ต่อยอดไอเดียเด่นๆ 20 ทีม',
+      objective:'สร้าง "ธนาคารภูมิปัญญา" — ระบบจัดเก็บ บันทึก และคุ้มครององค์ความรู้ท้องถิ่นให้เป็น "ทรัพย์สินของกองทุน" โดยไม่ต้องใช้สิทธิบัตร (ซึ่งยากและไม่เหมาะกับระดับชาวบ้าน) — ใช้กลไก Copyright + Trade Secret + GI + Blockchain Timestamp เพื่อคุ้มครองสูตร/วิธีทำ/ดีไซน์/ชื่อ/สีสัน/เรื่องเล่า ให้เป็นทรัพย์สินกองทุนที่ส่งต่อรุ่นสู่รุ่นได้ งบรวม 20 ลบ.',
       keyActivities:[
-        'Recruit 1,200 ผู้สมัครจาก 4 ภาค (ลูกหลานสมาชิกกองทุน + ผู้ประกอบการรายย่อย + นักศึกษาจบใหม่ 22-40 ปี) — รับจริง 1,000 คน',
-        'ออกแบบหลักสูตร Hybrid 6 เดือน: Core (บริหาร/บัญชี/การตลาด/กฎหมาย) + Elective (Digital/Export/Food/Craft/Farm)',
-        'พัฒนา VF Academy Platform — LMS + E-learning + คลังบทเรียน 100+ หัวข้อ',
-        'Expert Pool 50 ท่าน: อาจารย์ ม.ชั้นนำ + เจ้าของธุรกิจจริง + ผู้บริหารองค์กรใหญ่',
-        'Mentorship Program: จับคู่ 1 Mentor : 20 Mentees (รวม 50 mentors)',
-        'Onsite Bootcamp 4 ภาค × 2 รุ่น — Workshop + Networking + Industry Visit',
-        'Business Pitch Day: คัดเลือก 20 ไอเดียเด่น → เข้าพอร์ต VF ปี 3',
-        'Seed Funding: 20 ทีม × 300,000-500,000 บ. ต่อยอดเป็นโครงการจริง',
-        'Alumni Network + กลไกป้อนคนเข้าเป็นกรรมการกองทุนรุ่นใหม่',
-        'ประกาศนียบัตรร่วมกับ ม.ชั้นนำ (ขอความร่วมมือ ไม่ทำเอกสารผูกพัน)'
+        'จัดตั้งทีมลงพื้นที่ 77 จังหวัด — สัมภาษณ์-บันทึกปราชญ์ชาวบ้าน/เจ้าของสูตร/หมอพื้นบ้าน 500+ ราย',
+        'พัฒนาระบบ VF Wisdom Vault — Database + Mobile App บันทึกลง Cloud พร้อม Timestamp',
+        'ใช้ Blockchain Timestamp (Bitcoin OP_RETURN หรือ Polygon) พิสูจน์ "รู้มาก่อน" (Prior Art)',
+        'จดลิขสิทธิ์ (Copyright) งานเขียน/วิดีโอ/สูตร/ภาพในนามกองทุน ผ่าน DIP กรมทรัพย์สินทางปัญญา — 200+ ชิ้น',
+        'จดสิ่งบ่งชี้ทางภูมิศาสตร์ (GI) ร่วมกับกระทรวงพาณิชย์ — 30+ รายการ (เช่น "ชาเชียงรายมะเร็ง", "ข้าวหอมมะลิทุ่งกุลาร้องไห้ VF")',
+        'จัดทำสัญญา NDA + Trade Secret Registration — สูตรลับเชิงพาณิชย์ 100+ สูตร',
+        'สร้างใบรับรอง "VF Certified Heritage" — ใบสำคัญแสดงว่าความรู้นี้เป็นของกองทุน x',
+        'สร้างระบบ Revenue Sharing — แบ่งกำไรให้เจ้าของความรู้/ทายาท 5-15% ของยอดขายสินค้าที่ใช้ภูมิปัญญา',
+        'Licensing Desk — ให้ brand ภายนอก/SME ขอใช้ภูมิปัญญาได้ (มีค่าธรรมเนียม)',
+        'Archive Content: เขียน ebook + สารคดี 10 ตอน + Exhibition ถาวรในงาน VF กลาง'
       ],
       partners:[
-        'ม.เกษตรศาสตร์ (SME Program + Agri-Business)',
-        'สถาบันบัณฑิตฯ ศศินทร์ + NIDA Business School',
-        'สสว. (สำนักงานส่งเสริมวิสาหกิจ)',
-        'ตลาดหลักทรัพย์ฯ SET Foundation',
-        'ธ.ออมสิน / กสิกรไทย (การเงิน + สินเชื่อต่อยอด)',
-        'DEPA (Digital Transformation)',
-        'กระทรวงการอุดมศึกษาฯ',
-        'Alumni Entrepreneur Network จากทุกภาค'
+        'กรมทรัพย์สินทางปัญญา (DIP — ลิขสิทธิ์/Trade Secret)',
+        'กระทรวงพาณิชย์ / DITP (GI Registration)',
+        'กระทรวงวัฒนธรรม (ภูมิปัญญาท้องถิ่น)',
+        'ม.เชียงใหม่ + ม.ขอนแก่น + ม.อ. (ทีมวิจัยภาคสนาม)',
+        'สวทช. (เทคโนโลยี Blockchain Timestamp)',
+        'TCDC (บันทึก-จัดหมวดหมู่ภูมิปัญญา)',
+        'พิพิธภัณฑสถานแห่งชาติ + ศูนย์มานุษยวิทยาสิรินธร',
+        'ทนายความ IP 3-5 สำนัก (จดทะเบียน)'
       ],
-      targetAreas:['ภาคเหนือ: เชียงใหม่ hub','ภาคอีสาน: ขอนแก่น hub','ภาคกลาง: กรุงเทพฯ hub','ภาคใต้: หาดใหญ่ hub','Online ครอบคลุม 77 จังหวัด'],
+      targetAreas:['77 จังหวัดทั่วประเทศ','Pilot 4 ภาค × 20 ชุมชนต้นแบบ = 80 ชุมชน','จุดเก็บลึก: อีสาน (ผ้ามัดหมี่), เหนือ (ชา-กาแฟ-สมุนไพร-ผ้าปัก), ใต้ (อาหารทะเล-ผ้าย้อม), กลาง (ข้าว-น้ำพริก)'],
       skuList:[
-        '— โครงการนี้สร้าง "คน" ไม่ใช่ "สินค้า"',
-        'ผลผลิตคือ: 1,000 ผู้ประกอบการเลือดใหม่',
-        '+ 20 ไอเดียสินค้าสำหรับพอร์ตโฟลิโอ VF ปี 3',
-        '+ 50 SMEs เกิดใหม่ในชุมชน (spin-off)'
+        '— โครงการนี้สร้าง "ทรัพย์สินทางปัญญา" ไม่ใช่ "สินค้า"',
+        'ผลผลิตคือ: 500+ ภูมิปัญญาบันทึกและคุ้มครอง',
+        '+ 200+ Copyright Registrations',
+        '+ 30+ GI Registrations',
+        '+ 100+ Trade Secret Registrations',
+        'สนับสนุนทุกโครงการ VF — ป้อนภูมิปัญญาให้สินค้า #2-#5'
       ],
       deliverables:[
-        '1,000+ คน จบหลักสูตร พร้อม Certificate ร่วมกับ ม.ชั้นนำ',
-        'VF Academy LMS Platform + คลังบทเรียน 100+ หัวข้อ',
-        'Onsite Bootcamp 8 ครั้ง (4 ภาค × 2 รุ่น)',
-        'Mentor Pool 50 ท่าน + ระบบจับคู่',
-        'Business Pitch Day: 20 ไอเดียผ่านคัดเลือก',
-        'Seed Fund 8-10 ลบ. กระจายให้ 20 ทีม',
-        'Alumni Network + ระบบป้อนคนเข้ากองทุน',
-        'Playbook "กรรมการกองทุนรุ่นใหม่" ใช้ต่อปี 3-5'
+        'VF Wisdom Vault Platform — Database + Mobile App + Public Portal',
+        'บันทึกภูมิปัญญา 500+ รายการ (วิดีโอ + เอกสาร + ภาพ + สูตร)',
+        'Copyright Registration 200+ / GI 30+ / Trade Secret 100+',
+        'Blockchain Timestamp Records 500+ (พิสูจน์ Prior Art)',
+        'VF Certified Heritage Certificate System',
+        'Revenue Sharing Contract Template + ทะเบียนเจ้าของสิทธิ์',
+        'Licensing Desk + Playbook การขายสิทธิ์',
+        'Ebook 4 เล่ม + สารคดี 10 ตอน + นิทรรศการถาวร'
       ],
       kpis:[
-        'ผู้จบหลักสูตร 1,000+ คน (Retention 80%+)',
-        'Placement: 200+ เข้าเป็นกรรมการ/ผู้บริหารกองทุนรุ่นใหม่',
-        '20 ไอเดียสินค้าได้ Seed Fund → ต่อเข้าปี 3',
-        '50 SMEs ใหม่เกิดในชุมชน (หลักสูตรจบแล้ว 6 เดือน)',
-        'NPS ผู้เรียน 70+',
-        'อัตราสมาชิกกองทุนอายุ <40 ปี เพิ่มขึ้น 15% ใน 2 ปี'
+        'บันทึกภูมิปัญญาอย่างน้อย 500 รายการ ใน 10 เดือน',
+        'จดลิขสิทธิ์สำเร็จ 200+ / GI 30+ / Trade Secret 100+',
+        'ทุกโครงการ VF #2-#5 ใช้ภูมิปัญญาจาก Wisdom Bank อย่างน้อย 1 รายการ',
+        'มี Brand/SME ภายนอกขอ License ใช้ 20+ รายการ',
+        'Revenue Sharing ส่งกลับชุมชน 3+ ลบ. ใน 10 เดือน',
+        'ได้รับการรับรองเป็น National Heritage Asset Registry ร่วมกับกระทรวงวัฒนธรรม'
       ]
     }
   },
 ];
 
 const totalBudget = projects.reduce((s,p)=>s+p.budget,0);
-const totalWorking = projects.reduce((s,p)=>s+(p.split.dev+p.split.mkt+p.split.plat+p.split.sales),0);
-const totalBuffer = projects.reduce((s,p)=>s+(p.buffer||0),0);
 const totalSKU = projects.reduce((s,p)=>s+p.sku,0);
 const catTotals = projects.reduce((a,p)=>{
   a.dev+=p.split.dev; a.mkt+=p.split.mkt;
   a.plat+=p.split.plat; a.sales+=p.split.sales;
-  a.buffer+=(p.buffer||0);
   return a;
-},{dev:0,mkt:0,plat:0,sales:0,buffer:0});
+},{dev:0,mkt:0,plat:0,sales:0});
 
 Chart.defaults.font.family = 'Sarabun';
 Chart.defaults.color = '#475569';
@@ -1548,11 +1402,10 @@ const catLabels = [
   'การพัฒนาสินค้า (Dev)',
   'การตลาดและประชาสัมพันธ์ (Mkt)',
   'แพลตฟอร์มและระบบ (Platform)',
-  'ช่องทางการขาย (Sales)',
-  'เงินสำรองโครงการ (Buffer ~20%)'
+  'ช่องทางการขาย (Sales)'
 ];
-const catValues = [catTotals.dev, catTotals.mkt, catTotals.plat, catTotals.sales, catTotals.buffer];
-const catColors = ['#dc2626','#1e40af','#60a5fa','#ef4444','#64748b'];
+const catValues = [catTotals.dev, catTotals.mkt, catTotals.plat, catTotals.sales];
+const catColors = ['#dc2626','#1e40af','#60a5fa','#ef4444'];
 
 new Chart(document.getElementById('pieCategory'),{
   type:'doughnut',
@@ -1609,11 +1462,11 @@ new Chart(document.getElementById('pieProject'),{
 
 /* BOOTH TABLE */
 const booths = [
-  {pri:'MUST', flag:'🇹🇭', fair:'THAIFEX — Anuga Asia 2027', city:'BITEC Bangkok', when:'พ.ค. 2027', prod:'อาหารทะเล / ผลไม้ / ข้าว / ชา / สมุนไพร / ขนม', budget:'16 ลบ.'},
-  {pri:'MUST', flag:'🇦🇪', fair:'Gulfood 2027', city:'Dubai World Trade Centre', when:'ก.พ. 2027', prod:'ข้าว Hom Mali / ขนม Halal / อาหารทะเลแปรรูป', budget:'16 ลบ.'},
-  {pri:'HIGH', flag:'🇯🇵', fair:'Foodex Japan 2027', city:'Tokyo Big Sight', when:'มี.ค. 2027', prod:'อาหารทะเล / ข้าวพรีเมียม / ผลไม้อบแห้ง', budget:'14 ลบ.'},
-  {pri:'HIGH', flag:'🇨🇳', fair:'SIAL Shanghai 2027', city:'Shanghai NECC', when:'พ.ค. 2027', prod:'ผลไม้สด-แปรรูป / ชา / สมุนไพร', budget:'13 ลบ.'},
-  {pri:'MED', flag:'🇺🇸', fair:'Natural Products Expo', city:'Anaheim, USA', when:'มี.ค. 2027', prod:'สมุนไพร / ชา-กาแฟ / อาหารสุขภาพ', budget:'11 ลบ.'},
+  {pri:'MUST', flag:'🇹🇭', fair:'THAIFEX — Anuga Asia 2027', city:'BITEC Bangkok', when:'พ.ค. 2027', prod:'อาหารทะเล / ผลไม้ / ข้าว / ชา / สมุนไพร / ขนม'},
+  {pri:'MUST', flag:'🇦🇪', fair:'Gulfood 2027', city:'Dubai World Trade Centre', when:'ก.พ. 2027', prod:'ข้าว Hom Mali / ขนม Halal / อาหารทะเลแปรรูป'},
+  {pri:'HIGH', flag:'🇯🇵', fair:'Foodex Japan 2027', city:'Tokyo Big Sight', when:'มี.ค. 2027', prod:'อาหารทะเล / ข้าวพรีเมียม / ผลไม้อบแห้ง'},
+  {pri:'HIGH', flag:'🇨🇳', fair:'SIAL Shanghai 2027', city:'Shanghai NECC', when:'พ.ค. 2027', prod:'ผลไม้สด-แปรรูป / ชา / สมุนไพร'},
+  {pri:'MED', flag:'🇺🇸', fair:'Natural Products Expo', city:'Anaheim, USA', when:'มี.ค. 2027', prod:'สมุนไพร / ชา-กาแฟ / อาหารสุขภาพ'},
 ];
 const boothTbody = document.getElementById('boothTbody');
 booths.forEach(b=>{
@@ -1627,7 +1480,6 @@ booths.forEach(b=>{
       </td>
       <td><div class="booth-when">${b.when}</div></td>
       <td class="booth-prod">${b.prod}</td>
-      <td style="text-align:right;" class="booth-budget">${b.budget}</td>
     </tr>`);
 });
 
@@ -1655,8 +1507,8 @@ projects.forEach((p)=>{
 tbody.insertAdjacentHTML('afterend',`
   <tfoot>
     <tr style="background:#f1f5f9;font-weight:700;">
-      <td colspan="2" style="padding:12px 14px;color:var(--blue-dark);">รวมทั้งสิ้น 11 โครงการ</td>
-      <td style="text-align:right;padding:12px 14px;color:var(--red);font-size:15px;">${totalBudget}<small style="display:block;font-size:10px;font-weight:500;color:var(--gray-600);">(${totalWorking} ทำงาน + ${totalBuffer} สำรอง)</small></td>
+      <td colspan="2" style="padding:12px 14px;color:var(--blue-dark);">รวมทั้งสิ้น 7 โครงการ</td>
+      <td style="text-align:right;padding:12px 14px;color:var(--red);font-size:15px;">${totalBudget}<small style="display:block;font-size:10px;font-weight:500;color:var(--gray-600);">ล้านบาท</small></td>
       <td style="text-align:center;padding:12px 14px;color:var(--blue-dark);">${totalSKU} SKU</td>
       <td style="text-align:center;padding:12px 14px;color:var(--gray-600);">10 เดือน</td>
     </tr>
@@ -1680,18 +1532,15 @@ function openProjectModal(id){
   const deliverablesHTML = d.deliverables.map(a=>`<li>${a}</li>`).join('');
   const kpisHTML = d.kpis.map(a=>`<div class="kpi-card-mini">${a}</div>`).join('');
 
-  const workingSum = p.split.dev + p.split.mkt + p.split.plat + p.split.sales;
-  const bufferPct = Math.round((p.buffer / workingSum) * 100);
   const budgetHTML = `
     <div class="modal-budget-grid">
       <div class="budget-cell-card dev"><div class="bc-label">Dev</div><div class="bc-val">${p.split.dev}</div><div class="bc-unit">ลบ.</div></div>
       <div class="budget-cell-card mkt"><div class="bc-label">Marketing</div><div class="bc-val">${p.split.mkt}</div><div class="bc-unit">ลบ.</div></div>
       <div class="budget-cell-card plat"><div class="bc-label">Platform</div><div class="bc-val">${p.split.plat}</div><div class="bc-unit">ลบ.</div></div>
       <div class="budget-cell-card sales"><div class="bc-label">Sales</div><div class="bc-val">${p.split.sales}</div><div class="bc-unit">ลบ.</div></div>
-      <div class="budget-cell-card buffer"><div class="bc-label">Buffer ~${bufferPct}%</div><div class="bc-val">${p.buffer}</div><div class="bc-unit">ลบ.</div></div>
     </div>
     <div style="margin-top:10px;font-size:12.5px;color:var(--gray-600);text-align:center;">
-      💡 งบทำงาน <strong>${workingSum} ลบ.</strong> + สำรอง <strong>${p.buffer} ลบ.</strong> = รวม <strong>${p.budget} ลบ.</strong>
+      💡 งบรวม <strong>${p.budget} ลบ.</strong> กระจายในกิจกรรมหลัก 4 หมวด
     </div>`;
 
   const html = `
@@ -1803,14 +1652,14 @@ const heroHTML = `
     <div class="sku-hero-content">
       <span class="sku-hero-tag">★ โครงการหลัก (#${mainProject.id})</span>
       <div class="sku-hero-title">${mainProject.name}</div>
-      <div class="sku-hero-sub">สินค้าเข้าแบรนด์ VF สูงสุดในพอร์ตโฟลิโอ — รักษาสินค้าปี 1 ที่ผ่านพิสูจน์แล้ว 20 SKU พร้อมพัฒนาสินค้าใหม่ 60 SKU ผ่านทีม PM กลางและเครือข่ายกองทุนทั่วประเทศ</div>
+      <div class="sku-hero-sub">สินค้าเข้าแบรนด์ VF สูงสุดในพอร์ตโฟลิโอ — บริหารสินค้าต้นแบบ Hero 20 SKU พร้อมพัฒนาสินค้าใหม่ 66 SKU ผ่านทีม PM กลาง เครือข่ายกองทุนทั่วประเทศ และภูมิปัญญาจาก VF Wisdom Bank (#7)</div>
     </div>
     <div class="sku-hero-num">
-      <span class="num">80</span>
+      <span class="num">86</span>
       <span class="unit">SKU</span>
       <div class="breakdown">
-        <span class="chip">20 รอด (ปี 1)</span>
-        <span class="chip">60 ใหม่ (ปี 2)</span>
+        <span class="chip">20 Hero (ต้นแบบ)</span>
+        <span class="chip">66 ใหม่ (พัฒนาในโครงการ)</span>
       </div>
     </div>
   </div>`;
@@ -1818,7 +1667,7 @@ productSection.insertAdjacentHTML('beforeend', heroHTML);
 
 // Supplementary header
 productSection.insertAdjacentHTML('beforeend',`
-  <div class="sku-supp-title">สินค้าจากโครงการเสริม 10 โครงการ &middot; รวม ${suppTotal} SKU (โครงการ #11 บ่มเพาะคน ไม่มี SKU)</div>`);
+  <div class="sku-supp-title">สินค้าจากโครงการเสริม 12 โครงการ &middot; รวม ${suppTotal} SKU (#7 Wisdom Bank = IP)</div>`);
 
 // Grid of supplementary cards
 let gridHTML = '<div class="sku-supp-grid">';
